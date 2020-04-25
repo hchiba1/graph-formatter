@@ -1,2 +1,1 @@
-# gfmt
-Graph Formatter
+# PG formatter

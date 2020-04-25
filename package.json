@@ -5,16 +5,16 @@
   "dependencies": {
     "commander": "^2.19.0",
     "fs": "0.0.1-security",
-    "path": "^0.12.7",
+    "path": "^0.12.7"
   },
   "devDependencies": {
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
     "chai": "^4.2.0",
     "chai-fs": "^2.0.0",
     "pegjs": "^0.10.0"
   },
   "bin": {
-    "pgfmt": "bin/pgfmt.js",
-    "ttl": "bin/ttl.js",
+    "pgfmt": "./bin/pgfmt.js",
+    "ttl": "./bin/ttl.js"
   }
 }

@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "mocha": "^5.2.0",
-    "minimist": ">=0.2.1",
+    "minimist": ">=1.2.3",
     "chai": "^4.2.0",
     "chai-fs": "^2.0.0",
     "pegjs": "^0.10.0"

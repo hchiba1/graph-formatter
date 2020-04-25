@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const parser = require('./pg_parser.js');
+const parser = require('../lib/pg_parser.js');
 
 const commander = require('commander')
       .option('-f, --format <FORMAT>', 'json, neo')

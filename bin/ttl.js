@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
-const parser = require('./ttl_parser.js');
+const parser = require('../lib/ttl_parser.js');
 
 const commander = require('commander')
       .arguments('<TTL_FILE>')

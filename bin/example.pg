@@ -1,0 +1,30 @@
+'tax:9606' :lab name:"human" 'scientific name':"Homo Sapiens"
+
+"http://www.wikidata.org/entity/Q1470140"       ->      "http://www.wikidata.org/entity/Q238490"        :hasDrug
+"http://www.wikidata.org/entity/Q18967011"      ->      "http://www.wikidata.org/entity/Q238490"        :hasDrug
+"http://www.wikidata.org/entity/Q18967417"      ->      "http://www.wikidata.org/entity/Q238490"        :hasDrug
+"http://www.wikidata.org/entity/Q259626"        ->      "http://www.wikidata.org/entity/Q238490"        :hasDrug
+"http://www.wikidata.org/entity/Q2726043"       ->      "http://www.wikidata.org/entity/Q238490"        :hasDrug
+"http://www.wikidata.org/entity/Q273510"        ->      "http://www.wikidata.org/entity/Q238490"        :hasDrug
+"http://www.wikidata.org/entity/Q464067"        ->      "http://www.wikidata.org/entity/Q238490"        :hasDrug
+"http://www.wikidata.org/entity/Q48143"	->	"http://www.wikidata.org/entity/Q238490"	:hasDrug
+
+"http://www.wikidata.org/entity/Q1470140"	:Disease	name:cryptococcosis
+"http://www.wikidata.org/entity/Q18967011"	:Disease	name:"cryptococcal meningitis"
+"http://www.wikidata.org/entity/Q18967417"	:Disease	name:"pulmonary cryptococcosis"
+"http://www.wikidata.org/entity/Q259626"	:Disease	name:aspergillosis
+"http://www.wikidata.org/entity/Q2726043"	:Disease	name:chromoblastomycosis
+"http://www.wikidata.org/entity/Q273510"	:Disease	name:candidiasis
+"http://www.wikidata.org/entity/Q464067"	:Disease	name:"fungal infectious disease"
+"http://www.wikidata.org/entity/Q48143"	:Disease	name:meningitis
+
+# the property value starts with a number (it is not a number, but a string)
+"http://www.wikidata.org/entity/Q238490"	:Drug	name:5-fluorocytosine
+
+10000 name:山田太郎 	desc:"好きなプログラミング言語は、C言語です。\nあと、JavaScriptも書きます。"
+10001 name:'山田 花子' desc:好きなプログラミング言語は、Javaです。最近はPythonも書きます。
+20000 名前:山田太郎
+10000 -- 10001 :friend since:2015
+10000 -- 20000 :same :sameAs reason:migration details:'migration from hoge to \\nfuga' comments:"fuga \\fuga" comments:"..."
+
+# last comments

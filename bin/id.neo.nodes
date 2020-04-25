@@ -1,0 +1,7 @@
+id:ID	:LABEL
+abcde	person	B
+abc	person	C
+a:b	person	D
+a b	person	E
+a->	person	F
+a--	person	G

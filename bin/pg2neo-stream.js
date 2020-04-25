@@ -1,17 +1,10 @@
 #!/usr/bin/env node
-
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
 const parser = require('../lib/pg_parser.js');
 
-
 const commander = require('commander')
-      .option('-f, --format <FORMAT>', 'json, neo')
-      .option('-o, --outdir <DIR>', 'output directory', './')
-      .option('-c, --check', 'check for missing/orphan nodes')
-      .option('-d, --debug', 'output parsed synatax tree')
-      .option('-s, --stats', 'output stats for nodes and labels')
       .arguments('<PG_FILE>')
       .version(require("../package.json").version)
       .parse(process.argv);

@@ -13,7 +13,7 @@ const commander = require('commander')
       .option('-d, --debug', 'output parsed synatax tree')
       .option('-s, --stats', 'output stats for nodes and labels')
       .arguments('<PG_FILE>')
-      .version(require("../../package.json").version)
+      .version(require("../package.json").version)
       .parse(process.argv);
 
 // Get input and output file names

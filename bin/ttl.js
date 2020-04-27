@@ -5,6 +5,7 @@ const parser = require('../lib/ttl_parser.js');
 
 const commander = require('commander')
       .arguments('<TTL_FILE>')
+      .option('-d, --debug', 'output parsed synatax tree')
       .parse(process.argv);
 
 let inputText;
@@ -25,8 +26,10 @@ try {
   process.exit(1);
 }
 
-// console.log(objectTree);
-console.log(JSON.stringify(objectTree, null, 2));
+if (commander.debug) {
+  // console.log(objectTree);
+  console.log(JSON.stringify(objectTree, null, 2));
+}
 
 function printError(err) {
   const startLine = err.location.start.line;

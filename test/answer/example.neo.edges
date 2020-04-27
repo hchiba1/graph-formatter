@@ -1,0 +1,11 @@
+:START_ID	:END_ID	:TYPE	since	reason	details	comments
+http://www.wikidata.org/entity/Q1470140	http://www.wikidata.org/entity/Q238490	hasDrug				
+http://www.wikidata.org/entity/Q18967011	http://www.wikidata.org/entity/Q238490	hasDrug				
+http://www.wikidata.org/entity/Q18967417	http://www.wikidata.org/entity/Q238490	hasDrug				
+http://www.wikidata.org/entity/Q259626	http://www.wikidata.org/entity/Q238490	hasDrug				
+http://www.wikidata.org/entity/Q2726043	http://www.wikidata.org/entity/Q238490	hasDrug				
+http://www.wikidata.org/entity/Q273510	http://www.wikidata.org/entity/Q238490	hasDrug				
+http://www.wikidata.org/entity/Q464067	http://www.wikidata.org/entity/Q238490	hasDrug				
+http://www.wikidata.org/entity/Q48143	http://www.wikidata.org/entity/Q238490	hasDrug				
+10000	10001	friend	2015			
+10000	20000	same,sameAs		migration	migration from hoge to \nfuga	fuga \fuga;...

@@ -1,0 +1,15 @@
+id:ID	:LABEL	name	scientific name	desc	名前
+tax:9606	lab	human	Homo Sapiens		
+http://www.wikidata.org/entity/Q1470140	Disease	cryptococcosis			
+http://www.wikidata.org/entity/Q18967011	Disease	cryptococcal meningitis			
+http://www.wikidata.org/entity/Q18967417	Disease	pulmonary cryptococcosis			
+http://www.wikidata.org/entity/Q259626	Disease	aspergillosis			
+http://www.wikidata.org/entity/Q2726043	Disease	chromoblastomycosis			
+http://www.wikidata.org/entity/Q273510	Disease	candidiasis			
+http://www.wikidata.org/entity/Q464067	Disease	fungal infectious disease			
+http://www.wikidata.org/entity/Q48143	Disease	meningitis			
+http://www.wikidata.org/entity/Q238490	Drug	5-fluorocytosine			
+10000		山田太郎		好きなプログラミング言語は、C言語です。
+あと、JavaScriptも書きます。	
+10001		山田 花子		好きなプログラミング言語は、Javaです。最近はPythonも書きます。	
+20000					山田太郎

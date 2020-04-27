@@ -1,1 +1,1 @@
-# PG formatter
+# pgfmt

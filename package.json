@@ -16,5 +16,12 @@
   "bin": {
     "pgfmt": "./bin/pgfmt.js",
     "ttl": "./bin/ttl.js"
+  },
+  "mocha": {
+    "timeout": 15000,
+    "diff": false
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }

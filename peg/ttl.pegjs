@@ -92,7 +92,11 @@ followingObject = WS* ',' WS* o:object
 }
 
 // [9]	verb	::=	predicate | 'a'
-verb = predicate / 'a'
+verb = predicate
+/ 'a'
+{
+  return {iri: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"};
+}
 
 // [10]	subject	::=	iri | BlankNode | collection
 subject = iri / BlankNode / collection
@@ -171,13 +175,13 @@ STRING_LITERAL_LONG_QUOTE = '"""' content:([^\"\\] / ECHAR)* '"""'
 RDFLiteral = s:String e:(LANGTAG / '^^' iri)?
 {
   if(typeof(e) === "string" && e.length > 0) {
-    return {token:'literal', value:s.value, lang:e.slice(1), type:null}
+    return {literal: s, lang: e.slice(1)}
   } else {
     if(e != null && typeof(e) === "object") {
       e.shift(); // remove the '^^' char
-      return {token:'literal', value:s.value, lang:null, type:e[0]}
+      return {literal: s, datatype: e[0]}
     } else {
-      return { token:'literal', value:s.value, lang:null, type:null}
+      return {literal: s}
     }
   }
 }
@@ -205,11 +209,12 @@ BooleanLiteral = 'true'
 // [135s]	iri	::=	IRIREF | PrefixedName
 iri = iri:IRIREF
 {
-  return {token: 'uri', prefix:null, suffix:null, value:iri}
+  return {iri: iri}
 }
 / p:PrefixedName
 {
-  return p
+  // return p
+  return {iri: p};
 }
 
 // [136s]	PrefixedName	::=	PNAME_LN | PNAME_NS

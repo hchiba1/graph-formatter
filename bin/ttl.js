@@ -29,6 +29,14 @@ try {
 if (commander.debug) {
   // console.log(objectTree);
   console.log(JSON.stringify(objectTree, null, 2));
+} else {
+  objectTree.forEach((line) => {
+    if (line.hasOwnProperty('prefix')) {
+      // console.log(line);
+    } else {
+      console.log(JSON.stringify(line, null, 2));
+    }
+  });
 }
 
 function printError(err) {

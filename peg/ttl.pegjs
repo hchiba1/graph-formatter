@@ -1,3 +1,6 @@
+// Turtle Grammer
+// ref. https://www.w3.org/TR/turtle/#sec-grammar-grammar
+
 {
   var flattenString = function(arrs) {
     var acum ="";
@@ -11,10 +14,9 @@
 
     return acum;
   }
-}
 
-// Turtle Grammer
-// ref. https://www.w3.org/TR/turtle/#sec-grammar-grammar
+  let prefixHash = {};
+}
 
 // [1]	turtleDoc	::=	statement*
 turtleDoc = statement*
@@ -24,7 +26,7 @@ statement = d:directive WS*
 {
   return d;
 }
-/ t:triples '.' WS*
+/ t:triples WS* '.' WS*
 {
   return t;
 }
@@ -35,6 +37,7 @@ directive = prefix / base / sparqlPrefix / sparqlBase
 // [4]	prefixID	::=	'@prefix' PNAME_NS IRIREF '.'
 prefix = '@prefix' WS* p:PNAME_NS WS* i:IRIREF WS* '.'
 {
+  prefixHash[p] = i;
   return {prefix:p, iri:i};
 }
 
@@ -57,7 +60,7 @@ sparqlPrefix = 'PREFIX' p:PNAME_NS i:IRIREF
 }
 
 // [6]	triples	::=	subject predicateObjectList | blankNodePropertyList predicateObjectList?
-triples = s:subject po:predicateObjectList WS*
+triples = s:subject po:predicateObjectList
 {
   return {
     subj: s,
@@ -78,7 +81,6 @@ followingPredicateObjects = WS* ';' WS* p:verb os:objectList
 }
 
 // [8]	objectList	::=	object (',' object)*
-// objectList = WS* o1:object WS* o2:(',' WS* object)* WS*
 objectList = WS* o:object os:followingObject*
 {
   return [o].concat(os);
@@ -227,7 +229,8 @@ PNAME_NS = p:[a-z]* ':'
 PNAME_LN = p:PNAME_NS s:PN_LOCAL
 {
   // return [p, s]
-  return text();
+  // return text();
+  return prefixHash[p] + s;
 }
 
 // [141s]	BLANK_NODE_LABEL	::=	'_:' (PN_CHARS_U | [0-9]) ((PN_CHARS | '.')* PN_CHARS)?

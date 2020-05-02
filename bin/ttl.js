@@ -22,7 +22,11 @@ let objectTree;
 try {
   objectTree = parser.parse(inputText);
 } catch (err) {
-  printError(err);
+  if (err.location.start) {
+    printError(err);
+  } else {
+    console.error(err.message);
+  }
   process.exit(1);
 }
 

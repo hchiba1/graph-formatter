@@ -15,10 +15,28 @@
   }
 
   let prefixHash = {};
+
+  let tripleCount = 0;
 }
 
 // [1]	turtleDoc	::=	statement*
-turtleDoc = statement*
+// turtleDoc = s:statement*
+turtleDoc = l:line*
+{
+  return {
+    tripleCount: tripleCount,
+    triples: l.filter(v => v) // remove null
+  };
+}
+
+line = s:statement
+{
+  return s;
+}
+/ CommentLine
+{
+  return;
+}
 
 // [2]	statement	::=	directive | triples '.'
 statement = d:directive WS*
@@ -123,7 +141,11 @@ subject = iri / BlankNode / collection
 predicate = iri
 
 // [12]	object	::=	iri | BlankNode | collection | blankNodePropertyList | literal
-object = iri / BlankNode / collection / blankNodePropertyList / literal
+object = o:(iri / BlankNode / collection / blankNodePropertyList / literal)
+{
+  tripleCount++;
+  return o;
+}
 
 // [13]	literal	::=	RDFLiteral | NumericLiteral | BooleanLiteral
 literal = RDFLiteral / NumericLiteral / BooleanLiteral
@@ -338,3 +360,13 @@ PN_LOCAL_ESC = '\\' c:('_' / '~' / '.' / '-' / '!' / '$' / '&' / "'" / '(' / ')'
 {
   return '//' + c;
 }
+
+// space or tab
+SPACE = [\u0020\u0009]
+
+// CR or LF
+NEWLINE = [\u000D\u000A]
+
+NON_NEWLINE = [^\u000D\u000A]
+
+CommentLine = SPACE* ('#' NON_NEWLINE*)? NEWLINE

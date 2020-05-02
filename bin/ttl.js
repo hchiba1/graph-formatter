@@ -30,7 +30,7 @@ if (commander.debug) {
   // console.log(objectTree);
   console.log(JSON.stringify(objectTree, null, 2));
 } else {
-  objectTree.forEach((line) => {
+  objectTree.triples.forEach((line) => {
     if (line.hasOwnProperty('prefix')) {
       // console.log(line);
     } else {

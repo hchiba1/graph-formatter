@@ -59,14 +59,27 @@ sparqlPrefix = 'PREFIX' p:PNAME_NS i:IRIREF
 }
 
 // [6]	triples	::=	subject predicateObjectList | blankNodePropertyList predicateObjectList?
-triples = s:subject po:predicateObjectList
+triples = s:subject pos:predicateObjectList
 {
-  return {
-    subj: s,
-    po: po
-  }
+  let spo = [];
+  pos.forEach(po => {
+    po.os.forEach(o => {
+      spo.push({s:s, p:po.p, o:o});
+    });
+  });
+  return spo;
 }
-/ blankNodePropertyList predicateObjectList?
+/ s:blankNodePropertyList pos:predicateObjectList?
+{
+  let spo = [];
+  pos.forEach(po => {
+    po.os.forEach(o => {
+      spo.push({s:s, p:po.p, o:o});
+    });
+  });
+  return spo;
+}
+// TODO: check this return values
 
 // [7]	predicateObjectList	::=	verb objectList (';' (verb objectList)?)*
 predicateObjectList = WS* p:verb os:objectList pos:followingPredicateObjects* WS*
@@ -74,7 +87,13 @@ predicateObjectList = WS* p:verb os:objectList pos:followingPredicateObjects* WS
   return [ {p:p, os:os} ].concat(pos);
 }
 
-followingPredicateObjects = WS* ';' WS* p:verb os:objectList
+// followingPredicateObjects = WS* ';' WS* p:verb os:objectList
+followingPredicateObjects = WS* ';' WS* pos:predicateObjects?
+{
+  return pos;
+}
+
+predicateObjects = p:verb os:objectList
 {
   return {p:p, os:os};
 }
@@ -110,10 +129,21 @@ object = iri / BlankNode / collection / blankNodePropertyList / literal
 literal = RDFLiteral / NumericLiteral / BooleanLiteral
 
 // [14]	blankNodePropertyList	::=	'[' predicateObjectList ']'
-blankNodePropertyList = '[' predicateObjectList ']'
+blankNodePropertyList = '[' pos:predicateObjectList ']'
+{
+  return pos;
+}
+
+collectionElem = WS* o:object
+{
+  return o;
+}
 
 // [15]	collection	::=	'(' object* ')'
-collection = '(' object* ')'
+collection = '(' c:collectionElem* WS* ')'
+{
+  return c;
+}
 
 // [16]	NumericLiteral	::=	INTEGER | DECIMAL | DOUBLE
 NumericLiteral = INTEGER / DECIMAL / DOUBLE

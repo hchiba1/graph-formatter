@@ -5,6 +5,7 @@ const parser = require('../lib/ttl_parser.js');
 
 const commander = require('commander')
       .arguments('<TTL_FILE>')
+      .option('-c, --count', 'count triples')
       .option('-d, --debug', 'output parsed synatax tree')
       .parse(process.argv);
 
@@ -33,6 +34,8 @@ try {
 if (commander.debug) {
   // console.log(objectTree);
   console.log(JSON.stringify(objectTree, null, 2));
+} else if (commander.count) {
+  console.log(objectTree.tripleCount);
 } else {
   objectTree.triples.forEach((line) => {
     if (line.hasOwnProperty('prefix')) {

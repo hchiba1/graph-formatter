@@ -105,7 +105,6 @@ predicateObjectList = WS* p:verb os:objectList pos:followingPredicateObjects* WS
   return [ {p:p, os:os} ].concat(pos);
 }
 
-// followingPredicateObjects = WS* ';' WS* p:verb os:objectList
 followingPredicateObjects = WS* ';' WS* pos:predicateObjects?
 {
   return pos;
@@ -119,7 +118,11 @@ predicateObjects = p:verb os:objectList
 // [8]	objectList	::=	object (',' object)*
 objectList = WS* o:object os:followingObject*
 {
-  return [o].concat(os);
+  if (os) {
+    return [o].concat(os);
+  } else {
+    return [o];
+  }
 }
 
 followingObject = WS* ',' WS* o:object

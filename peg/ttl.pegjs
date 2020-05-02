@@ -81,9 +81,11 @@ triples = s:subject pos:predicateObjectList
 {
   let spo = [];
   pos.forEach(po => {
-    po.os.forEach(o => {
-      spo.push({s:s, p:po.p, o:o});
-    });
+    if (po && po.os) {
+      po.os.forEach(o => {
+        spo.push({s:s, p:po.p, o:o});
+      });
+    }
   });
   return spo;
 }
@@ -91,9 +93,11 @@ triples = s:subject pos:predicateObjectList
 {
   let spo = [];
   pos.forEach(po => {
-    po.os.forEach(o => {
-      spo.push({s:s, p:po.p, o:o});
-    });
+    if (po && po.os) {
+      po.os.forEach(o => {
+        spo.push({s:s, p:po.p, o:o});
+      });
+    }
   });
   return spo;
 }

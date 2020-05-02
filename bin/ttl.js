@@ -22,7 +22,7 @@ let objectTree;
 try {
   objectTree = parser.parse(inputText);
 } catch (err) {
-  if (err.location.start) {
+  if (err.location) {
     printError(err);
   } else {
     console.error(err.message);

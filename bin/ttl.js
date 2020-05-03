@@ -33,7 +33,6 @@ try {
 }
 
 if (commander.debug) {
-  // console.log(objectTree);
   console.log(JSON.stringify(objectTree, null, 2));
   process.exit(0);
 } else if (commander.count) {
@@ -42,7 +41,6 @@ if (commander.debug) {
 } else if (commander.check) {
   objectTree.triples.forEach((line) => {
     if (line.hasOwnProperty('prefix')) {
-      // console.log(line);
     } else {
       console.log(JSON.stringify(line, null, 2));
     }
@@ -52,7 +50,6 @@ if (commander.debug) {
 
 objectTree.triples.forEach((line) => {
   if (line.hasOwnProperty('prefix')) {
-    // console.log(line);
   } else {
     console.log(line);
   }

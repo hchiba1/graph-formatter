@@ -25,7 +25,7 @@ turtleDoc = l:line*
 {
   return {
     tripleCount: tripleCount,
-    triples: l.filter(v => v) // remove null
+    triples: l.filter(v => v).flat() // remove null
   };
 }
 

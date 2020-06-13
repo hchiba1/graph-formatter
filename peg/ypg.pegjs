@@ -36,7 +36,7 @@ NodeOrEdge = n:Node
   }
 }
 
-Node = CommentLine* WS* id:Value '[' l:NON_SPECIAL_CHAR+ ']:{' p:Property* '}' InlineComment? EndOfLine
+Node = CommentLine* WS* id:Value '[' l:NON_SPECIAL_CHAR* ']:{' p:Property* '}' InlineComment? EndOfLine
 {
   let propObj = {};
   p.forEach(prop => {

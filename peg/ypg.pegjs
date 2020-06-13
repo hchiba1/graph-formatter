@@ -36,7 +36,7 @@ NodeOrEdge = n:Node
   }
 }
 
-Node = CommentLine* WS* id:Value '[' l:NON_SPECIAL_CHAR* ']:{' p:Property* '}' InlineComment? EndOfLine
+Node = CommentLine* WS* id:Value '[' l:Label* ']:{' p:Property* '}' InlineComment? EndOfLine
 {
   let propObj = {};
   p.forEach(prop => {
@@ -55,22 +55,22 @@ Node = CommentLine* WS* id:Value '[' l:NON_SPECIAL_CHAR* ']:{' p:Property* '}' I
 
   nodeCount++;
 
-  // l.forEach(label => {
-  //   if (nodeLabelHash[label]) {
-  //     nodeLabelHash[label]++;
-  //   } else {
-  //     nodeLabelHash[label] = 1;
-  //   }
-  // });
+  l.forEach(label => {
+    if (nodeLabelHash[label]) {
+      nodeLabelHash[label]++;
+    } else {
+      nodeLabelHash[label] = 1;
+    }
+  });
 
   return {
     id: id,
-    labels: l.join(''),
+    labels: l,
     properties: propObj
   }
 }
 
-Edge = CommentLine* WS* '(' f:Value ')' '-[' l:NON_SPECIAL_CHAR+ p:Property* ']' d:Direction '(' t:Value ')' InlineComment? EndOfLine
+Edge = CommentLine* WS* '(' f:Value ')' '-[' l:Label* p:Property* ']' d:Direction '(' t:Value ')' InlineComment? EndOfLine
 {
   let propObj = {};
   p.forEach(prop => {
@@ -89,29 +89,29 @@ Edge = CommentLine* WS* '(' f:Value ')' '-[' l:NON_SPECIAL_CHAR+ p:Property* ']'
 
   edgeCount++;
 
-  // l.forEach(label => {
-  //   if (edgeLabelHash[label]) {
-  //     edgeLabelHash[label]++;
-  //   } else {
-  //     edgeLabelHash[label] = 1;
-  //   }
-  // });
+  l.forEach(label => {
+    if (edgeLabelHash[label]) {
+      edgeLabelHash[label]++;
+    } else {
+      edgeLabelHash[label] = 1;
+    }
+  });
 
   return {
     from: f,
     to: t,
     direction: d,
-    labels: l.join(''),
+    labels: l,
     properties: propObj
   }
 }
 
-Label = WS+ ':' WS* l:Value
+Label = ','? l:NON_SPECIAL_CHAR+
 {
-  return l
+  return l.join('');
 }
 
-Property = k:Value WS* ':' WS* v:Value
+Property = ','? k:Value WS* ':' WS* v:Value
 {
   return {
     key: k,
@@ -179,11 +179,13 @@ Value = Number & SPECIAL_CHAR
 }
 / '"' chars:DoubleQuotedChar* '"'
 {
-  return chars.join('');
+  // return chars.join('');
+  return text();
 }
 / "'" chars:SingleQuotedChar* "'"
 {
-  return chars.join('');
+  // return chars.join('');
+  return text();
 }
 / chars:NON_SPECIAL_CHAR+
 {
@@ -193,10 +195,10 @@ Value = Number & SPECIAL_CHAR
 // space or tab
 WS = [\u0020\u0009]
 
-// () [ ]
-SPECIAL_CHAR = [:\u0020\u0009\u000D\u000A\u0028\u0029\u005B\u005D]
+// sapce tab CR LF () [ ] ,
+SPECIAL_CHAR = [:\u0020\u0009\u000D\u000A\u0028\u0029\u005B\u005D\u002C]
 
-NON_SPECIAL_CHAR = [^:\u0020\u0009\u000D\u000A\u0028\u0029\u005B\u005D]
+NON_SPECIAL_CHAR = [^:\u0020\u0009\u000D\u000A\u0028\u0029\u005B\u005D\u002C]
 
 // CR or LF
 NEWLINE = [\u000D\u000A]

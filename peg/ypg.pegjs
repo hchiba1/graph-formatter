@@ -111,7 +111,7 @@ Label = WS+ ':' WS* l:Value
   return l
 }
 
-Property = WS+ k:Value WS* ':' WS* v:Value
+Property = k:Value WS* ':' WS* v:Value
 {
   return {
     key: k,

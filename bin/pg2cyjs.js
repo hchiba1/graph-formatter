@@ -231,8 +231,9 @@ function outputCyJS(objectTree, outFilePrefix) {
         console.log(`          "${p}": "${val}",`);
       });
     });
-    console.log(`          "id_original": "${n.id}",`);
-    console.log(`          "id": "${counter}"`);
+    console.log(`          "id": "${n.id}"`);
+    // console.log(`          "id_original": "${n.id}",`);
+    // console.log(`          "id": "${counter}"`);
     console.log('        }');
     console.log('      }');
     getNodeID[n.id] = counter;
@@ -269,9 +270,12 @@ function outputCyJS(objectTree, outFilePrefix) {
         console.log(`          "${p}": "${val}",`);
       });
     });
-    console.log(`          "source": "${source}",`);
-    console.log(`          "target": "${target}",`);
-    console.log(`          "id": "${counter}"`);
+    console.log(`          "source": "${e.from}",`);
+    console.log(`          "target": "${e.to}",`);
+    console.log(`          "id": "${edgeCounter}"`);
+    // console.log(`          "source": "${source}",`);
+    // console.log(`          "target": "${target}",`);
+    // console.log(`          "id": "${counter}"`);
     console.log('        }');
     console.log('      }');
   });

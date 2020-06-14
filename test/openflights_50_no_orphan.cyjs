@@ -6,6 +6,7 @@
           "name": "Reykjavik Airport",
           "iata": "RKV",
           "city": "Reykjavik",
+          "label": "airport",
           "id": "http://openflights.org/Airport/18"
         }
       }
@@ -15,6 +16,7 @@
           "name": "Akureyri Airport",
           "iata": "AEY",
           "city": "Akureyri",
+          "label": "airport",
           "id": "http://openflights.org/Airport/11"
         }
       }
@@ -24,6 +26,7 @@
           "name": "Chengdu Shuangliu International Airport",
           "iata": "CTU",
           "city": "Chengdu",
+          "label": "airport",
           "id": "http://openflights.org/Airport/3395"
         }
       }
@@ -33,6 +36,7 @@
           "name": "King Fahd International Airport",
           "iata": "DMM",
           "city": "Dammam",
+          "label": "airport",
           "id": "http://openflights.org/Airport/2064"
         }
       }
@@ -42,6 +46,7 @@
           "name": "Longdongbao Airport",
           "iata": "KWE",
           "city": "Guiyang",
+          "label": "airport",
           "id": "http://openflights.org/Airport/3394"
         }
       }
@@ -51,6 +56,7 @@
           "name": "Juanda International Airport",
           "iata": "SUB",
           "city": "Surabaya",
+          "label": "airport",
           "id": "http://openflights.org/Airport/3928"
         }
       }
@@ -60,6 +66,7 @@
           "name": "Juwata Airport",
           "iata": "TRK",
           "city": "Taraken",
+          "label": "airport",
           "id": "http://openflights.org/Airport/3920"
         }
       }
@@ -69,6 +76,7 @@
           "name": "Chongqing Jiangbei International Airport",
           "iata": "CKG",
           "city": "Chongqing",
+          "label": "airport",
           "id": "http://openflights.org/Airport/3393"
         }
       }
@@ -78,6 +86,7 @@
           "name": "Al Baha Airport",
           "iata": "ABT",
           "city": "El-baha",
+          "label": "airport",
           "id": "http://openflights.org/Airport/2061"
         }
       }
@@ -87,6 +96,7 @@
           "name": "Yantai Laishan Airport",
           "iata": "YNT",
           "city": "Yantai",
+          "label": "airport",
           "id": "http://openflights.org/Airport/3392"
         }
       }
@@ -96,6 +106,7 @@
           "name": "Chhatrapati Shivaji International Airport",
           "iata": "BOM",
           "city": "Mumbai",
+          "label": "airport",
           "id": "http://openflights.org/Airport/2997"
         }
       }
@@ -105,6 +116,7 @@
           "name": "Pdte. carlos Iba?ez del Campo Airport",
           "iata": "PUQ",
           "city": "Punta Arenas",
+          "label": "airport",
           "id": "http://openflights.org/Airport/2647"
         }
       }
@@ -114,6 +126,7 @@
           "name": "Balmaceda Airport",
           "iata": "BBA",
           "city": "Balmaceda",
+          "label": "airport",
           "id": "http://openflights.org/Airport/2642"
         }
       }
@@ -123,6 +136,7 @@
           "name": "Sardar Vallabhbhai Patel International Airport",
           "iata": "AMD",
           "city": "Ahmedabad",
+          "label": "airport",
           "id": "http://openflights.org/Airport/2994"
         }
       }
@@ -132,6 +146,7 @@
           "name": "Indira Gandhi International Airport",
           "iata": "DEL",
           "city": "Delhi",
+          "label": "airport",
           "id": "http://openflights.org/Airport/3093"
         }
       }
@@ -141,6 +156,7 @@
           "name": "Victoria Falls International Airport",
           "iata": "VFA",
           "city": "Victoria Falls",
+          "label": "airport",
           "id": "http://openflights.org/Airport/1004"
         }
       }
@@ -150,6 +166,7 @@
           "name": "Joshua Mqabuko Nkomo International Airport",
           "iata": "BUQ",
           "city": "Bulawayo",
+          "label": "airport",
           "id": "http://openflights.org/Airport/1001"
         }
       }
@@ -159,6 +176,7 @@
           "name": "Xoxocotlan International Airport",
           "iata": "OAX",
           "city": "Oaxaca",
+          "label": "airport",
           "id": "http://openflights.org/Airport/1829"
         }
       }
@@ -168,6 +186,7 @@
           "name": "Joensuu Airport",
           "iata": "JOE",
           "city": "Joensuu",
+          "label": "airport",
           "id": "http://openflights.org/Airport/429"
         }
       }
@@ -177,6 +196,7 @@
           "name": "Sanday Airport",
           "iata": "NDY",
           "city": "Sanday",
+          "label": "airport",
           "id": "http://openflights.org/Airport/5569"
         }
       }
@@ -186,6 +206,7 @@
           "name": "North Ronaldsay Airport",
           "iata": "NRL",
           "city": "North Ronaldsay",
+          "label": "airport",
           "id": "http://openflights.org/Airport/5566"
         }
       }
@@ -195,6 +216,7 @@
           "name": "Helsinki Vantaa Airport",
           "iata": "HEL",
           "city": "Helsinki",
+          "label": "airport",
           "id": "http://openflights.org/Airport/421"
         }
       }
@@ -204,6 +226,7 @@
           "name": "General Mariano Escobedo International Airport",
           "iata": "MTY",
           "city": "Monterrey",
+          "label": "airport",
           "id": "http://openflights.org/Airport/1825"
         }
       }
@@ -213,6 +236,7 @@
           "name": "Saurimo Airport",
           "iata": "VHC",
           "city": "Saurimo",
+          "label": "airport",
           "id": "http://openflights.org/Airport/957"
         }
       }
@@ -222,6 +246,7 @@
           "name": "Quatro de Fevereiro Airport",
           "iata": "LAD",
           "city": "Luanda",
+          "label": "airport",
           "id": "http://openflights.org/Airport/951"
         }
       }
@@ -231,6 +256,7 @@
           "name": "Leipzig Halle Airport",
           "iata": "LEJ",
           "city": "Leipzig",
+          "label": "airport",
           "id": "http://openflights.org/Airport/348"
         }
       }
@@ -240,6 +266,7 @@
           "name": "Nuremberg Airport",
           "iata": "NUE",
           "city": "Nuernberg",
+          "label": "airport",
           "id": "http://openflights.org/Airport/347"
         }
       }
@@ -249,6 +276,7 @@
           "name": "Dusseldorf International Airport",
           "iata": "DUS",
           "city": "Duesseldorf",
+          "label": "airport",
           "id": "http://openflights.org/Airport/345"
         }
       }
@@ -258,6 +286,7 @@
           "name": "Hamburg Airport",
           "iata": "HAM",
           "city": "Hamburg",
+          "label": "airport",
           "id": "http://openflights.org/Airport/342"
         }
       }
@@ -267,6 +296,7 @@
           "name": "Frankfurt am Main International Airport",
           "iata": "FRA",
           "city": "Frankfurt",
+          "label": "airport",
           "id": "http://openflights.org/Airport/340"
         }
       }
@@ -276,6 +306,7 @@
           "name": "Tokyo Haneda International Airport",
           "iata": "HND",
           "city": "Tokyo",
+          "label": "airport",
           "id": "http://openflights.org/Airport/2359"
         }
       }
@@ -285,6 +316,7 @@
           "name": "Valencia Airport",
           "iata": "VLC",
           "city": "Valencia",
+          "label": "airport",
           "id": "http://openflights.org/Airport/1246"
         }
       }
@@ -294,6 +326,7 @@
           "name": "Santiago de Compostela Airport",
           "iata": "SCQ",
           "city": "Santiago",
+          "label": "airport",
           "id": "http://openflights.org/Airport/1243"
         }
       }
@@ -303,6 +336,7 @@
           "name": "Oshima Airport",
           "iata": "OIM",
           "city": "Oshima",
+          "label": "airport",
           "id": "http://openflights.org/Airport/2356"
         }
       }
@@ -312,6 +346,7 @@
           "name": "Tenerife Norte Airport",
           "iata": "TFN",
           "city": "Tenerife",
+          "label": "airport",
           "id": "http://openflights.org/Airport/1057"
         }
       }
@@ -321,6 +356,7 @@
           "name": "Ishigaki Airport",
           "iata": "ISG",
           "city": "Ishigaki",
+          "label": "airport",
           "id": "http://openflights.org/Airport/2387"
         }
       }
@@ -330,6 +366,7 @@
           "name": "Edinburgh Airport",
           "iata": "EDI",
           "city": "Edinburgh",
+          "label": "airport",
           "id": "http://openflights.org/Airport/535"
         }
       }
@@ -339,6 +376,7 @@
           "name": "Gdansk Lech Walesa Airport",
           "iata": "GDN",
           "city": "Gdansk",
+          "label": "airport",
           "id": "http://openflights.org/Airport/668"
         }
       }
@@ -348,6 +386,7 @@
           "name": "Inverness Airport",
           "iata": "INV",
           "city": "Inverness",
+          "label": "airport",
           "id": "http://openflights.org/Airport/533"
         }
       }
@@ -357,6 +396,7 @@
           "name": "Stavanger Airport Sola",
           "iata": "SVG",
           "city": "Stavanger",
+          "label": "airport",
           "id": "http://openflights.org/Airport/666"
         }
       }
@@ -366,6 +406,7 @@
           "name": "Hierro Airport",
           "iata": "VDE",
           "city": "Hierro",
+          "label": "airport",
           "id": "http://openflights.org/Airport/1052"
         }
       }
@@ -375,6 +416,7 @@
           "name": "Naha Airport",
           "iata": "OKA",
           "city": "Okinawa",
+          "label": "airport",
           "id": "http://openflights.org/Airport/2384"
         }
       }
@@ -384,6 +426,7 @@
           "name": "Soekarno-Hatta International Airport",
           "iata": "CGK",
           "city": "Jakarta",
+          "label": "airport",
           "id": "http://openflights.org/Airport/3275"
         }
       }
@@ -393,6 +436,7 @@
           "name": "King Abdulaziz International Airport",
           "iata": "JED",
           "city": "Jeddah",
+          "label": "airport",
           "id": "http://openflights.org/Airport/2072"
         }
       }
@@ -402,6 +446,7 @@
           "name": "Ministro Pistarini International Airport",
           "iata": "EZE",
           "city": "Buenos Aires",
+          "label": "airport",
           "id": "http://openflights.org/Airport/3988"
         }
       }
@@ -411,6 +456,7 @@
           "name": "Amsterdam Airport Schiphol",
           "iata": "AMS",
           "city": "Amsterdam",
+          "label": "airport",
           "id": "http://openflights.org/Airport/580"
         }
       }
@@ -420,6 +466,7 @@
           "name": "Jorge Chavez International Airport",
           "iata": "LIM",
           "city": "Lima",
+          "label": "airport",
           "id": "http://openflights.org/Airport/2789"
         }
       }
@@ -429,6 +476,7 @@
           "name": "Fukuoka Airport",
           "iata": "FUK",
           "city": "Fukuoka",
+          "label": "airport",
           "id": "http://openflights.org/Airport/2305"
         }
       }
@@ -438,6 +486,7 @@
           "name": "Lilongwe International Airport",
           "iata": "LLW",
           "city": "Lilongwe",
+          "label": "airport",
           "id": "http://openflights.org/Airport/1016"
         }
       }
@@ -447,6 +496,7 @@
           "name": "Chileka International Airport",
           "iata": "BLZ",
           "city": "Blantyre",
+          "label": "airport",
           "id": "http://openflights.org/Airport/1013"
         }
       }
@@ -457,6 +507,7 @@
           "airline": "Shenzhen Airlines",
           "country": "China",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3395",
           "target": "http://openflights.org/Airport/3392",
           "id": "1"
@@ -468,6 +519,7 @@
           "airline": "Saudi Arabian Airlines",
           "country": "Saudi Arabia",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2064",
           "target": "http://openflights.org/Airport/2061",
           "id": "2"
@@ -479,6 +531,7 @@
           "airline": "Huaxia",
           "country": "China",
           "plane": "Canadair Regional Jet 200",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3393",
           "target": "http://openflights.org/Airport/3394",
           "id": "3"
@@ -490,6 +543,7 @@
           "airline": "Saudi Arabian Airlines",
           "country": "Saudi Arabia",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2061",
           "target": "http://openflights.org/Airport/2064",
           "id": "4"
@@ -501,6 +555,7 @@
           "airline": "Huaxia",
           "country": "China",
           "plane": "Canadair Regional Jet 900",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3394",
           "target": "http://openflights.org/Airport/3393",
           "id": "5"
@@ -512,6 +567,7 @@
           "airline": "China Southern Airlines",
           "country": "China",
           "plane": "Airbus A321",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3392",
           "target": "http://openflights.org/Airport/3395",
           "id": "6"
@@ -523,6 +579,7 @@
           "airline": "Flybe",
           "country": "United Kingdom",
           "plane": "Fairchild Dornier Do.328",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/533",
           "target": "http://openflights.org/Airport/535",
           "id": "7"
@@ -534,6 +591,7 @@
           "airline": "Wizz Air",
           "country": "Hungary",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/666",
           "target": "http://openflights.org/Airport/668",
           "id": "8"
@@ -545,6 +603,7 @@
           "airline": "Wizz Air",
           "country": "Hungary",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/668",
           "target": "http://openflights.org/Airport/666",
           "id": "9"
@@ -556,6 +615,7 @@
           "airline": "Spicejet",
           "country": "India",
           "plane": "Boeing 737",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3093",
           "target": "http://openflights.org/Airport/2997",
           "id": "10"
@@ -567,6 +627,7 @@
           "airline": "Birmingham European",
           "country": "United Kingdom",
           "plane": "Boeing 737-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1825",
           "target": "http://openflights.org/Airport/1829",
           "id": "11"
@@ -578,6 +639,7 @@
           "airline": "Spicejet",
           "country": "India",
           "plane": "Boeing 737",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2997",
           "target": "http://openflights.org/Airport/3093",
           "id": "12"
@@ -589,6 +651,7 @@
           "airline": "Birmingham European",
           "country": "United Kingdom",
           "plane": "Boeing 737-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1829",
           "target": "http://openflights.org/Airport/1825",
           "id": "13"
@@ -600,6 +663,7 @@
           "airline": "TAAG Angola Airlines",
           "country": "Angola",
           "plane": "Boeing 737-700",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/951",
           "target": "http://openflights.org/Airport/957",
           "id": "14"
@@ -611,6 +675,7 @@
           "airline": "TAAG Angola Airlines",
           "country": "Angola",
           "plane": "Boeing 737-700",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/957",
           "target": "http://openflights.org/Airport/951",
           "id": "15"
@@ -622,6 +687,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Embraer 190",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/348",
           "target": "http://openflights.org/Airport/340",
           "id": "16"
@@ -633,6 +699,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Canadair Regional Jet 700",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/348",
           "id": "17"
@@ -644,6 +711,7 @@
           "airline": "Lion Mentari Airlines",
           "country": "Indonesia",
           "plane": "Boeing 737-800",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3928",
           "target": "http://openflights.org/Airport/3920",
           "id": "18"
@@ -655,6 +723,7 @@
           "airline": "Finnair",
           "country": "Finland",
           "plane": "Aerospatiale/Alenia ATR 72",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/421",
           "target": "http://openflights.org/Airport/429",
           "id": "19"
@@ -666,6 +735,7 @@
           "airline": "Lion Mentari Airlines",
           "country": "Indonesia",
           "plane": "Boeing 737-800",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3920",
           "target": "http://openflights.org/Airport/3928",
           "id": "20"
@@ -677,6 +747,7 @@
           "airline": "Finnair",
           "country": "Finland",
           "plane": "Embraer 170",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/429",
           "target": "http://openflights.org/Airport/421",
           "id": "21"
@@ -688,6 +759,7 @@
           "airline": "KLM Royal Dutch Airlines",
           "country": "Netherlands",
           "plane": "Boeing 777",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/2305",
           "id": "22"
@@ -699,6 +771,7 @@
           "airline": "LAN Airlines",
           "country": "Chile",
           "plane": "Boeing 767-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2789",
           "target": "http://openflights.org/Airport/3988",
           "id": "23"
@@ -710,6 +783,7 @@
           "airline": "KLM Royal Dutch Airlines",
           "country": "Netherlands",
           "plane": "Boeing 777",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2305",
           "target": "http://openflights.org/Airport/580",
           "id": "24"
@@ -721,6 +795,7 @@
           "airline": "LAN Airlines",
           "country": "Chile",
           "plane": "Boeing 767-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3988",
           "target": "http://openflights.org/Airport/2789",
           "id": "25"
@@ -732,6 +807,7 @@
           "airline": "Ethiopian Airlines",
           "country": "Ethiopia",
           "plane": "Boeing 737-800",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1013",
           "target": "http://openflights.org/Airport/1016",
           "id": "26"
@@ -743,6 +819,7 @@
           "airline": "Ethiopian Airlines",
           "country": "Ethiopia",
           "plane": "Boeing 737-800",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1016",
           "target": "http://openflights.org/Airport/1013",
           "id": "27"
@@ -754,6 +831,7 @@
           "airline": "Spicejet",
           "country": "India",
           "plane": "Boeing 737",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2997",
           "target": "http://openflights.org/Airport/2994",
           "id": "28"
@@ -765,6 +843,7 @@
           "airline": "All Nippon Airways",
           "country": "Japan",
           "plane": "Boeing 737",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2359",
           "target": "http://openflights.org/Airport/2356",
           "id": "29"
@@ -776,6 +855,7 @@
           "airline": "All Nippon Airways",
           "country": "Japan",
           "plane": "Boeing 737",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2356",
           "target": "http://openflights.org/Airport/2359",
           "id": "30"
@@ -787,6 +867,7 @@
           "airline": "Air Zimbabwe",
           "country": "Zimbabwe",
           "plane": "Boeing 737-200",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1001",
           "target": "http://openflights.org/Airport/1004",
           "id": "31"
@@ -798,6 +879,7 @@
           "airline": "Air Zimbabwe",
           "country": "Zimbabwe",
           "plane": "Boeing 737-200",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1004",
           "target": "http://openflights.org/Airport/1001",
           "id": "32"
@@ -809,6 +891,7 @@
           "airline": "Ryanair",
           "country": "Ireland",
           "plane": "Boeing 737-800",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1246",
           "target": "http://openflights.org/Airport/1243",
           "id": "33"
@@ -820,6 +903,7 @@
           "airline": "Ryanair",
           "country": "Ireland",
           "plane": "Boeing 737-800",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1243",
           "target": "http://openflights.org/Airport/1246",
           "id": "34"
@@ -831,6 +915,7 @@
           "airline": "Linhas A",
           "country": "Mozambique",
           "plane": "Pilatus Britten-Norman BN-2A/B Islander",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/5566",
           "target": "http://openflights.org/Airport/5569",
           "id": "35"
@@ -842,6 +927,7 @@
           "airline": "Spicejet",
           "country": "India",
           "plane": "Boeing 737",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2994",
           "target": "http://openflights.org/Airport/2997",
           "id": "36"
@@ -853,6 +939,7 @@
           "airline": "Nas Air",
           "country": "Saudi Arabia",
           "plane": "Airbus A330",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3275",
           "target": "http://openflights.org/Airport/2072",
           "id": "37"
@@ -864,6 +951,7 @@
           "airline": "Sky Airline",
           "country": "Chile",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2647",
           "target": "http://openflights.org/Airport/2642",
           "id": "38"
@@ -875,6 +963,7 @@
           "airline": "Garuda Indonesia",
           "country": "Indonesia",
           "plane": "Boeing 777",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2072",
           "target": "http://openflights.org/Airport/3275",
           "id": "39"
@@ -886,6 +975,7 @@
           "airline": "Sky Airline",
           "country": "Chile",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2642",
           "target": "http://openflights.org/Airport/2647",
           "id": "40"
@@ -897,6 +987,7 @@
           "airline": "Air Iceland",
           "country": "Iceland",
           "plane": "Fokker 50",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/18",
           "target": "http://openflights.org/Airport/11",
           "id": "41"
@@ -908,6 +999,7 @@
           "airline": "Air Iceland",
           "country": "Iceland",
           "plane": "Fokker 50",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/11",
           "target": "http://openflights.org/Airport/18",
           "id": "42"
@@ -919,6 +1011,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/345",
           "target": "http://openflights.org/Airport/342",
           "id": "43"
@@ -930,6 +1023,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/347",
           "id": "44"
@@ -941,6 +1035,7 @@
           "airline": "All Nippon Airways",
           "country": "Japan",
           "plane": "Boeing 737-500",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2387",
           "target": "http://openflights.org/Airport/2384",
           "id": "45"
@@ -952,6 +1047,7 @@
           "airline": "Binter Canarias",
           "country": "Spain",
           "plane": "Aerospatiale/Alenia ATR 72",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1057",
           "target": "http://openflights.org/Airport/1052",
           "id": "46"
@@ -963,6 +1059,7 @@
           "airline": "Skymark Airlines",
           "country": "Japan",
           "plane": "Boeing 737",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2384",
           "target": "http://openflights.org/Airport/2387",
           "id": "47"
@@ -974,6 +1071,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/347",
           "target": "http://openflights.org/Airport/340",
           "id": "48"
@@ -985,6 +1083,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/342",
           "target": "http://openflights.org/Airport/345",
           "id": "49"
@@ -996,6 +1095,7 @@
           "airline": "Binter Canarias",
           "country": "Spain",
           "plane": "Aerospatiale/Alenia ATR 72",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1052",
           "target": "http://openflights.org/Airport/1057",
           "id": "50"
@@ -1007,6 +1107,7 @@
           "airline": "Sichuan Airlines",
           "country": "China",
           "plane": "Airbus A330",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3395",
           "target": "http://openflights.org/Airport/3393",
           "id": "51"
@@ -1018,6 +1119,7 @@
           "airline": "Sichuan Airlines",
           "country": "China",
           "plane": "Airbus A330",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3393",
           "target": "http://openflights.org/Airport/3395",
           "id": "52"
@@ -1029,6 +1131,7 @@
           "airline": "Ethiopian Airlines",
           "country": "Ethiopia",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/345",
           "id": "53"
@@ -1040,6 +1143,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/345",
           "target": "http://openflights.org/Airport/340",
           "id": "54"
@@ -1051,6 +1155,7 @@
           "airline": "Air Berlin",
           "country": "Germany",
           "plane": "De Havilland Canada DHC-8-400 Dash 8Q",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/342",
           "target": "http://openflights.org/Airport/347",
           "id": "55"
@@ -1062,6 +1167,7 @@
           "airline": "Air Berlin",
           "country": "Germany",
           "plane": "De Havilland Canada DHC-8-400 Dash 8Q",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/347",
           "target": "http://openflights.org/Airport/342",
           "id": "56"
@@ -1073,6 +1179,7 @@
           "airline": "Air Berlin",
           "country": "Germany",
           "plane": "De Havilland Canada DHC-8-400 Dash 8Q",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/347",
           "target": "http://openflights.org/Airport/345",
           "id": "57"
@@ -1084,6 +1191,7 @@
           "airline": "Air Berlin",
           "country": "Germany",
           "plane": "De Havilland Canada DHC-8-400 Dash 8Q",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/345",
           "target": "http://openflights.org/Airport/347",
           "id": "58"
@@ -1095,6 +1203,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Airbus A321",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/342",
           "id": "59"
@@ -1106,6 +1215,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/342",
           "target": "http://openflights.org/Airport/340",
           "id": "60"
@@ -1117,6 +1227,7 @@
           "airline": "Air China",
           "country": "China",
           "plane": "Airbus A321",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3395",
           "target": "http://openflights.org/Airport/3394",
           "id": "61"
@@ -1128,6 +1239,7 @@
           "airline": "Air China",
           "country": "China",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3394",
           "target": "http://openflights.org/Airport/3395",
           "id": "62"
@@ -1139,6 +1251,7 @@
           "airline": "Spicejet",
           "country": "India",
           "plane": "Boeing 737",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3093",
           "target": "http://openflights.org/Airport/2994",
           "id": "63"
@@ -1150,6 +1263,7 @@
           "airline": "Air India Limited",
           "country": "India",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2994",
           "target": "http://openflights.org/Airport/3093",
           "id": "64"
@@ -1161,6 +1275,7 @@
           "airline": "All Nippon Airways",
           "country": "Japan",
           "plane": "Boeing 787-8",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/2359",
           "id": "65"
@@ -1172,6 +1287,7 @@
           "airline": "All Nippon Airways",
           "country": "Japan",
           "plane": "Boeing 787-8",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2359",
           "target": "http://openflights.org/Airport/340",
           "id": "66"
@@ -1183,6 +1299,7 @@
           "airline": "Eurolot",
           "country": "Poland",
           "plane": "De Havilland Canada DHC-8-400 Dash 8Q",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/421",
           "target": "http://openflights.org/Airport/668",
           "id": "67"
@@ -1194,6 +1311,7 @@
           "airline": "Eurolot",
           "country": "Poland",
           "plane": "De Havilland Canada DHC-8-400 Dash 8Q",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/668",
           "target": "http://openflights.org/Airport/421",
           "id": "68"
@@ -1205,6 +1323,7 @@
           "airline": "Nas Air",
           "country": "Saudi Arabia",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2072",
           "target": "http://openflights.org/Airport/2064",
           "id": "69"
@@ -1216,6 +1335,7 @@
           "airline": "Saudi Arabian Airlines",
           "country": "Saudi Arabia",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2064",
           "target": "http://openflights.org/Airport/2072",
           "id": "70"
@@ -1227,6 +1347,7 @@
           "airline": "Saudi Arabian Airlines",
           "country": "Saudi Arabia",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2072",
           "target": "http://openflights.org/Airport/2061",
           "id": "71"
@@ -1238,6 +1359,7 @@
           "airline": "Saudi Arabian Airlines",
           "country": "Saudi Arabia",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2061",
           "target": "http://openflights.org/Airport/2072",
           "id": "72"
@@ -1249,6 +1371,7 @@
           "airline": "Alitalia",
           "country": "Italy",
           "plane": "Boeing 777-300ER",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/2789",
           "id": "73"
@@ -1260,6 +1383,7 @@
           "airline": "Alitalia",
           "country": "Italy",
           "plane": "Boeing 777-300ER",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2789",
           "target": "http://openflights.org/Airport/580",
           "id": "74"
@@ -1271,6 +1395,7 @@
           "airline": "KLM Royal Dutch Airlines",
           "country": "Netherlands",
           "plane": "Boeing 777",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/3988",
           "id": "75"
@@ -1282,6 +1407,7 @@
           "airline": "KLM Royal Dutch Airlines",
           "country": "Netherlands",
           "plane": "Boeing 777",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3988",
           "target": "http://openflights.org/Airport/580",
           "id": "76"
@@ -1293,6 +1419,7 @@
           "airline": "Flybe",
           "country": "United Kingdom",
           "plane": "De Havilland Canada DHC-8-400 Dash 8Q",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/533",
           "id": "77"
@@ -1304,6 +1431,7 @@
           "airline": "Flybe",
           "country": "United Kingdom",
           "plane": "De Havilland Canada DHC-8-400 Dash 8Q",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/533",
           "target": "http://openflights.org/Airport/580",
           "id": "78"
@@ -1315,6 +1443,7 @@
           "airline": "easyJet",
           "country": "United Kingdom",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/535",
           "id": "79"
@@ -1326,6 +1455,7 @@
           "airline": "easyJet",
           "country": "United Kingdom",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/535",
           "target": "http://openflights.org/Airport/580",
           "id": "80"
@@ -1337,6 +1467,7 @@
           "airline": "Skymark Airlines",
           "country": "Japan",
           "plane": "Boeing 737",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2359",
           "target": "http://openflights.org/Airport/2384",
           "id": "81"
@@ -1348,6 +1479,7 @@
           "airline": "All Nippon Airways",
           "country": "Japan",
           "plane": "Boeing 777-200",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2384",
           "target": "http://openflights.org/Airport/2359",
           "id": "82"
@@ -1359,6 +1491,7 @@
           "airline": "Japan Transocean Air",
           "country": "Japan",
           "plane": "Boeing 737-400",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2359",
           "target": "http://openflights.org/Airport/2387",
           "id": "83"
@@ -1370,6 +1503,7 @@
           "airline": "Japan Transocean Air",
           "country": "Japan",
           "plane": "Boeing 737-400",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2387",
           "target": "http://openflights.org/Airport/2359",
           "id": "84"
@@ -1381,6 +1515,7 @@
           "airline": "KLM Royal Dutch Airlines",
           "country": "Netherlands",
           "plane": "Airbus A330",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/3093",
           "id": "85"
@@ -1392,6 +1527,7 @@
           "airline": "KLM Royal Dutch Airlines",
           "country": "Netherlands",
           "plane": "Airbus A330",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3093",
           "target": "http://openflights.org/Airport/580",
           "id": "86"
@@ -1403,6 +1539,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Airbus A330",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3395",
           "target": "http://openflights.org/Airport/340",
           "id": "87"
@@ -1414,6 +1551,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Airbus A330",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/3395",
           "id": "88"
@@ -1425,6 +1563,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Boeing 747-400",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/2997",
           "id": "89"
@@ -1436,6 +1575,7 @@
           "airline": "Air India Limited",
           "country": "India",
           "plane": "Boeing 747-400",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2997",
           "target": "http://openflights.org/Airport/340",
           "id": "90"
@@ -1447,6 +1587,7 @@
           "airline": "Air India Limited",
           "country": "India",
           "plane": "Boeing 787-8",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/3093",
           "id": "91"
@@ -1458,6 +1599,7 @@
           "airline": "Air India Limited",
           "country": "India",
           "plane": "Boeing 787-8",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3093",
           "target": "http://openflights.org/Airport/340",
           "id": "92"
@@ -1469,6 +1611,7 @@
           "airline": "All Nippon Airways",
           "country": "Japan",
           "plane": "Boeing 737-500",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2305",
           "target": "http://openflights.org/Airport/2387",
           "id": "93"
@@ -1480,6 +1623,7 @@
           "airline": "All Nippon Airways",
           "country": "Japan",
           "plane": "Boeing 737-500",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2387",
           "target": "http://openflights.org/Airport/2305",
           "id": "94"
@@ -1491,6 +1635,7 @@
           "airline": "Skymark Airlines",
           "country": "Japan",
           "plane": "Boeing 737",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2305",
           "target": "http://openflights.org/Airport/2384",
           "id": "95"
@@ -1502,6 +1647,7 @@
           "airline": "Japan Transocean Air",
           "country": "Japan",
           "plane": "Boeing 737-400",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2384",
           "target": "http://openflights.org/Airport/2305",
           "id": "96"
@@ -1513,6 +1659,7 @@
           "airline": "Air China",
           "country": "China",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3395",
           "target": "http://openflights.org/Airport/2997",
           "id": "97"
@@ -1524,6 +1671,7 @@
           "airline": "Air China",
           "country": "China",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2997",
           "target": "http://openflights.org/Airport/3395",
           "id": "98"
@@ -1535,6 +1683,7 @@
           "airline": "easyJet",
           "country": "United Kingdom",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/535",
           "target": "http://openflights.org/Airport/342",
           "id": "99"
@@ -1546,6 +1695,7 @@
           "airline": "easyJet",
           "country": "United Kingdom",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/342",
           "target": "http://openflights.org/Airport/535",
           "id": "100"
@@ -1557,6 +1707,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Airbus A321",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/535",
           "id": "101"
@@ -1568,6 +1719,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Airbus A321",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/535",
           "target": "http://openflights.org/Airport/340",
           "id": "102"
@@ -1579,6 +1731,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Boeing 747-400",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/3988",
           "id": "103"
@@ -1590,6 +1743,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Boeing 747-400",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3988",
           "target": "http://openflights.org/Airport/340",
           "id": "104"
@@ -1601,6 +1755,7 @@
           "airline": "Iberia Airlines",
           "country": "Spain",
           "plane": "Canadair Regional Jet 900",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1057",
           "target": "http://openflights.org/Airport/1243",
           "id": "105"
@@ -1612,6 +1767,7 @@
           "airline": "Iberia Airlines",
           "country": "Spain",
           "plane": "Canadair Regional Jet 900",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1243",
           "target": "http://openflights.org/Airport/1057",
           "id": "106"
@@ -1623,6 +1779,7 @@
           "airline": "Iberia Airlines",
           "country": "Spain",
           "plane": "Canadair Regional Jet 900",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1057",
           "target": "http://openflights.org/Airport/1246",
           "id": "107"
@@ -1634,6 +1791,7 @@
           "airline": "Iberia Airlines",
           "country": "Spain",
           "plane": "Canadair Regional Jet 900",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1246",
           "target": "http://openflights.org/Airport/1057",
           "id": "108"
@@ -1645,6 +1803,7 @@
           "airline": "Japan Airlines",
           "country": "Japan",
           "plane": "Boeing 767",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2359",
           "target": "http://openflights.org/Airport/2305",
           "id": "109"
@@ -1656,6 +1815,7 @@
           "airline": "All Nippon Airways",
           "country": "Japan",
           "plane": "Boeing 777-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2305",
           "target": "http://openflights.org/Airport/2359",
           "id": "110"
@@ -1667,6 +1827,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Boeing 737-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/340",
           "id": "111"
@@ -1678,6 +1839,7 @@
           "airline": "Ethiopian Airlines",
           "country": "Ethiopia",
           "plane": "Boeing 737-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/580",
           "id": "112"
@@ -1689,6 +1851,7 @@
           "airline": "Alitalia",
           "country": "Italy",
           "plane": "Boeing 737",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/342",
           "id": "113"
@@ -1700,6 +1863,7 @@
           "airline": "Alitalia",
           "country": "Italy",
           "plane": "Boeing 737",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/342",
           "target": "http://openflights.org/Airport/580",
           "id": "114"
@@ -1711,6 +1875,7 @@
           "airline": "Alitalia",
           "country": "Italy",
           "plane": "Fokker 70",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/345",
           "id": "115"
@@ -1722,6 +1887,7 @@
           "airline": "KLM Royal Dutch Airlines",
           "country": "Netherlands",
           "plane": "Fokker 70",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/345",
           "target": "http://openflights.org/Airport/580",
           "id": "116"
@@ -1733,6 +1899,7 @@
           "airline": "Flybaboo",
           "country": "Switzerland",
           "plane": "Saab 2000",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/348",
           "id": "117"
@@ -1744,6 +1911,7 @@
           "airline": "Flybaboo",
           "country": "Switzerland",
           "plane": "Saab 2000",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/348",
           "target": "http://openflights.org/Airport/580",
           "id": "118"
@@ -1755,6 +1923,7 @@
           "airline": "KLM Royal Dutch Airlines",
           "country": "Netherlands",
           "plane": "Fokker 70",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/347",
           "target": "http://openflights.org/Airport/580",
           "id": "119"
@@ -1766,6 +1935,7 @@
           "airline": "Scandinavian Airlines System",
           "country": "Sweden",
           "plane": "Boeing 737-800",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/666",
           "target": "http://openflights.org/Airport/535",
           "id": "120"
@@ -1777,6 +1947,7 @@
           "airline": "Scandinavian Airlines System",
           "country": "Sweden",
           "plane": "Boeing 737-800",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/535",
           "target": "http://openflights.org/Airport/666",
           "id": "121"
@@ -1788,6 +1959,7 @@
           "airline": "Ryanair",
           "country": "Ireland",
           "plane": "Boeing 737-800",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/535",
           "target": "http://openflights.org/Airport/668",
           "id": "122"
@@ -1799,6 +1971,7 @@
           "airline": "Ryanair",
           "country": "Ireland",
           "plane": "Boeing 737-800",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/668",
           "target": "http://openflights.org/Airport/535",
           "id": "123"
@@ -1810,6 +1983,7 @@
           "airline": "Formosa Airlines",
           "country": "Taiwan",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/1246",
           "id": "124"
@@ -1821,6 +1995,7 @@
           "airline": "Formosa Airlines",
           "country": "Taiwan",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1246",
           "target": "http://openflights.org/Airport/580",
           "id": "125"
@@ -1832,6 +2007,7 @@
           "airline": "Alitalia",
           "country": "Italy",
           "plane": "Embraer 190",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/666",
           "id": "126"
@@ -1843,6 +2019,7 @@
           "airline": "KLM Royal Dutch Airlines",
           "country": "Netherlands",
           "plane": "Boeing 737",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/666",
           "target": "http://openflights.org/Airport/580",
           "id": "127"
@@ -1854,6 +2031,7 @@
           "airline": "Eurolot",
           "country": "Poland",
           "plane": "De Havilland Canada DHC-8-400 Dash 8Q",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/668",
           "id": "128"
@@ -1865,6 +2043,7 @@
           "airline": "Eurolot",
           "country": "Poland",
           "plane": "De Havilland Canada DHC-8-400 Dash 8Q",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/668",
           "target": "http://openflights.org/Airport/580",
           "id": "129"
@@ -1876,6 +2055,7 @@
           "airline": "KLM Royal Dutch Airlines",
           "country": "Netherlands",
           "plane": "Boeing 737",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/421",
           "id": "130"
@@ -1887,6 +2067,7 @@
           "airline": "KLM Royal Dutch Airlines",
           "country": "Netherlands",
           "plane": "Boeing 737",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/421",
           "target": "http://openflights.org/Airport/580",
           "id": "131"
@@ -1898,6 +2079,7 @@
           "airline": "United Airlines",
           "country": "United States",
           "plane": "Airbus A330-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/2072",
           "id": "132"
@@ -1909,6 +2091,7 @@
           "airline": "Air Canada",
           "country": "Canada",
           "plane": "Airbus A330-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2072",
           "target": "http://openflights.org/Airport/340",
           "id": "133"
@@ -1920,6 +2103,7 @@
           "airline": "All Nippon Airways",
           "country": "Japan",
           "plane": "Boeing 787-8",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3275",
           "target": "http://openflights.org/Airport/2359",
           "id": "134"
@@ -1931,6 +2115,7 @@
           "airline": "Garuda Indonesia",
           "country": "Indonesia",
           "plane": "Boeing 787-8",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2359",
           "target": "http://openflights.org/Airport/3275",
           "id": "135"
@@ -1942,6 +2127,7 @@
           "airline": "Finnair",
           "country": "Finland",
           "plane": "Airbus A330-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3093",
           "target": "http://openflights.org/Airport/421",
           "id": "136"
@@ -1953,6 +2139,7 @@
           "airline": "Finnair",
           "country": "Finland",
           "plane": "Airbus A330-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/421",
           "target": "http://openflights.org/Airport/3093",
           "id": "137"
@@ -1964,6 +2151,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Airbus A340-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/951",
           "id": "138"
@@ -1975,6 +2163,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Airbus A340-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/951",
           "target": "http://openflights.org/Airport/340",
           "id": "139"
@@ -1986,6 +2175,7 @@
           "airline": "KLM Royal Dutch Airlines",
           "country": "Netherlands",
           "plane": "Airbus A330",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/951",
           "id": "140"
@@ -1997,6 +2187,7 @@
           "airline": "KLM Royal Dutch Airlines",
           "country": "Netherlands",
           "plane": "Airbus A330",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/951",
           "target": "http://openflights.org/Airport/580",
           "id": "141"
@@ -2008,6 +2199,7 @@
           "airline": "Delta Air Lines",
           "country": "United States",
           "plane": "Airbus A330-200",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/580",
           "target": "http://openflights.org/Airport/2064",
           "id": "142"
@@ -2019,6 +2211,7 @@
           "airline": "Air France",
           "country": "France",
           "plane": "Airbus A330",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2064",
           "target": "http://openflights.org/Airport/580",
           "id": "143"
@@ -2030,6 +2223,7 @@
           "airline": "Finnair",
           "country": "Finland",
           "plane": "Airbus A330-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3393",
           "target": "http://openflights.org/Airport/421",
           "id": "144"
@@ -2041,6 +2235,7 @@
           "airline": "Finnair",
           "country": "Finland",
           "plane": "Airbus A330-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/421",
           "target": "http://openflights.org/Airport/3393",
           "id": "145"
@@ -2052,6 +2247,7 @@
           "airline": "Saudi Arabian Airlines",
           "country": "Saudi Arabia",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3093",
           "target": "http://openflights.org/Airport/2064",
           "id": "146"
@@ -2063,6 +2259,7 @@
           "airline": "Saudi Arabian Airlines",
           "country": "Saudi Arabia",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2064",
           "target": "http://openflights.org/Airport/3093",
           "id": "147"
@@ -2074,6 +2271,7 @@
           "airline": "Saudi Arabian Airlines",
           "country": "Saudi Arabia",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2064",
           "target": "http://openflights.org/Airport/2997",
           "id": "148"
@@ -2085,6 +2283,7 @@
           "airline": "Saudi Arabian Airlines",
           "country": "Saudi Arabia",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2997",
           "target": "http://openflights.org/Airport/2064",
           "id": "149"
@@ -2096,6 +2295,7 @@
           "airline": "LOT Polish Airlines",
           "country": "Poland",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/668",
           "id": "150"
@@ -2107,6 +2307,7 @@
           "airline": "LOT Polish Airlines",
           "country": "Poland",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/668",
           "target": "http://openflights.org/Airport/340",
           "id": "151"
@@ -2118,6 +2319,7 @@
           "airline": "Scandinavian Airlines System",
           "country": "Sweden",
           "plane": "Boeing 737-500",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/666",
           "id": "152"
@@ -2129,6 +2331,7 @@
           "airline": "Scandinavian Airlines System",
           "country": "Sweden",
           "plane": "Boeing 737-300",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/666",
           "target": "http://openflights.org/Airport/340",
           "id": "153"
@@ -2140,6 +2343,7 @@
           "airline": "Garuda Indonesia",
           "country": "Indonesia",
           "plane": "Boeing 747-400",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2072",
           "target": "http://openflights.org/Airport/3928",
           "id": "154"
@@ -2151,6 +2355,7 @@
           "airline": "Garuda Indonesia",
           "country": "Indonesia",
           "plane": "Boeing 747-400",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3928",
           "target": "http://openflights.org/Airport/2072",
           "id": "155"
@@ -2162,6 +2367,7 @@
           "airline": "Lion Mentari Airlines",
           "country": "Indonesia",
           "plane": "Boeing 737-800",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3275",
           "target": "http://openflights.org/Airport/3920",
           "id": "156"
@@ -2173,6 +2379,7 @@
           "airline": "Lion Mentari Airlines",
           "country": "Indonesia",
           "plane": "Boeing 737-800",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3920",
           "target": "http://openflights.org/Airport/3275",
           "id": "157"
@@ -2184,6 +2391,7 @@
           "airline": "Citilink Indonesia",
           "country": "Indonesia",
           "plane": "Airbus A320",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3275",
           "target": "http://openflights.org/Airport/3928",
           "id": "158"
@@ -2195,6 +2403,7 @@
           "airline": "Lion Mentari Airlines",
           "country": "Indonesia",
           "plane": "Boeing 737-900",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3928",
           "target": "http://openflights.org/Airport/3275",
           "id": "159"
@@ -2206,6 +2415,7 @@
           "airline": "Air Berlin",
           "country": "Germany",
           "plane": "Embraer 190",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/345",
           "target": "http://openflights.org/Airport/421",
           "id": "160"
@@ -2217,6 +2427,7 @@
           "airline": "Finnair",
           "country": "Finland",
           "plane": "Embraer 190",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/421",
           "target": "http://openflights.org/Airport/345",
           "id": "161"
@@ -2228,6 +2439,7 @@
           "airline": "Air Berlin",
           "country": "Germany",
           "plane": "Embraer 190",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/342",
           "target": "http://openflights.org/Airport/421",
           "id": "162"
@@ -2239,6 +2451,7 @@
           "airline": "Air Berlin",
           "country": "Germany",
           "plane": "Embraer 190",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/421",
           "target": "http://openflights.org/Airport/342",
           "id": "163"
@@ -2250,6 +2463,7 @@
           "airline": "Air Berlin",
           "country": "Germany",
           "plane": "Embraer 190",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/421",
           "id": "164"
@@ -2261,6 +2475,7 @@
           "airline": "Finnair",
           "country": "Finland",
           "plane": "Embraer 190",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/421",
           "target": "http://openflights.org/Airport/340",
           "id": "165"
@@ -2272,6 +2487,7 @@
           "airline": "Air India Limited",
           "country": "India",
           "plane": "Boeing 777-300ER",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2072",
           "target": "http://openflights.org/Airport/2997",
           "id": "166"
@@ -2283,6 +2499,7 @@
           "airline": "Saudi Arabian Airlines",
           "country": "Saudi Arabia",
           "plane": "Boeing 777-200",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2997",
           "target": "http://openflights.org/Airport/2072",
           "id": "167"
@@ -2294,6 +2511,7 @@
           "airline": "Air India Limited",
           "country": "India",
           "plane": "Boeing 777-300ER",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/2072",
           "target": "http://openflights.org/Airport/3093",
           "id": "168"
@@ -2305,6 +2523,7 @@
           "airline": "Air India Limited",
           "country": "India",
           "plane": "Boeing 777-300ER",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/3093",
           "target": "http://openflights.org/Airport/2072",
           "id": "169"
@@ -2316,6 +2535,7 @@
           "airline": "Air Canada",
           "country": "Canada",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/340",
           "target": "http://openflights.org/Airport/1246",
           "id": "170"
@@ -2327,6 +2547,7 @@
           "airline": "Air Canada",
           "country": "Canada",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1246",
           "target": "http://openflights.org/Airport/340",
           "id": "171"
@@ -2338,6 +2559,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/345",
           "target": "http://openflights.org/Airport/1246",
           "id": "172"
@@ -2349,6 +2571,7 @@
           "airline": "Lufthansa",
           "country": "Germany",
           "plane": "Airbus A319",
+          "label": "has_flight_to",
           "source": "http://openflights.org/Airport/1246",
           "target": "http://openflights.org/Airport/345",
           "id": "173"

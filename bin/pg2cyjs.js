@@ -81,8 +81,7 @@ if (commander.check) {
       break;
   }
 } else {
-  // same as commander.debug
-  console.log(JSON.stringify(objectTree, null, 2));
+  outputCyJS(objectTree, outFilePrefix);
 }
 
 // Functions
@@ -197,50 +196,92 @@ function outputCyJS(objectTree, outFilePrefix) {
   const nodeProps = Object.keys(objectTree.nodeProperties);
   const edgeProps = Object.keys(objectTree.edgeProperties);
 
+  let counter = 0;
+  let nodeCounter = 0;
+  let edgeCounter = 0;
+  let getNodeID = {};
+
+  console.log('{');
+  console.log('  "elements": {');
+  console.log('    "nodes": [');
+  
   // Output nodes
-  let nodeHeader = ['id:ID', ':LABEL'];
-  nodeHeader = nodeHeader.concat(nodeProps);
-
   let nodeLines = [];
-
-  nodeLines.push(nodeHeader.join('\t'));
-
   objectTree.nodes.forEach(n => {
-    let line = [];
-    line.push(n.id)
-    line.push(n.labels)
-    nodeProps.forEach(p => {
-      if (n.properties[p]) {
-        line.push(n.properties[p].join(';'));
-      } else {
-        line.push('');
-      }
+    counter++;
+    nodeCounter++;
+    // let line = [];
+    // line.push(n.id)
+    // line.push(n.labels)
+    // nodeProps.forEach(p => {
+    //   if (n.properties[p]) {
+    //     line.push(n.properties[p].join(';'));
+    //   } else {
+    //     line.push('');
+    //   }
+    // });
+    // nodeLines.push(line.join('\t'));
+    if (nodeCounter > 1) {
+      console.log('      ,');
+    }
+    console.log('      {');
+    console.log('        "data": {');
+    Object.keys(n.properties).forEach(p => {
+      n.properties[p].forEach(val => {
+        console.log(`          "${p}": "${val}",`);
+      });
     });
-    nodeLines.push(line.join('\t'));
+    console.log(`          "id_original": "${n.id}",`);
+    console.log(`          "id": "${counter}"`);
+    console.log('        }');
+    console.log('      }');
+    getNodeID[n.id] = counter;
   });
+
+  console.log('    ],');
+  console.log('    "edges": [');
 
   // Output edges
-  let edgeHeader = [':START_ID', ':END_ID', ':TYPE'];
-  edgeHeader = edgeHeader.concat(edgeProps);
-
   let edgeLines = [];
-  edgeLines.push(edgeHeader.join('\t'));
-
   objectTree.edges.forEach(e => {
-    let line = [];
-    line.push(e.from, e.to)
-    line.push(e.labels)
-    edgeProps.forEach(p => {
-      if (e.properties[p]) {
-        line.push(e.properties[p].join(';'));
-      } else {
-        line.push('');
-      }
+    counter++;
+    edgeCounter++;
+    // let line = [];
+    // line.push(e.from, e.to)
+    // line.push(e.labels)
+    // edgeProps.forEach(p => {
+    //   if (e.properties[p]) {
+    //     line.push(e.properties[p].join(';'));
+    //   } else {
+    //     line.push('');
+    //   }
+    // });
+    // edgeLines.push(line.join('\t'));
+    const source = getNodeID[e.from];
+    const target = getNodeID[e.to];
+    if (edgeCounter > 1) {
+      console.log('      ,');
+    }
+    console.log('      {');
+    console.log('        "data": {');
+    Object.keys(e.properties).forEach(p => {
+      e.properties[p].forEach(val => {
+        console.log(`          "${p}": "${val}",`);
+      });
     });
-    edgeLines.push(line.join('\t'));
+    console.log(`          "source": "${source}",`);
+    console.log(`          "target": "${target}",`);
+    console.log(`          "id": "${counter}"`);
+    console.log('        }');
+    console.log('      }');
   });
 
-  console.log(nodeLines.join('\n') + '\n' + edgeLines.join('\n'));
+  console.log('    ]');
+  console.log('  }');
+  console.log('}');
+  
+
+  // console.log(nodeLines.join('\n') + '\n' + edgeLines.join('\n'));
   // fs.writeFile(outFile, nodeLines.join('\n') + '\n' + edgeLines.join('\n') + '\n', (err) => {
   //   if (err) {
   //     console.log(err);

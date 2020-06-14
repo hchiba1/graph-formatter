@@ -217,6 +217,9 @@ function outputCyJS(objectTree, outFilePrefix) {
         console.log(`          "${p}": "${val}",`);
       });
     });
+    n.labels.forEach(lab => {
+      console.log(`          "label": "${lab}",`);
+    });
     console.log(`          "id": "${n.id}"`);
     // console.log(`          "id_original": "${n.id}",`);
     // console.log(`          "id": "${counter}"`);
@@ -239,10 +242,13 @@ function outputCyJS(objectTree, outFilePrefix) {
     }
     console.log('      {');
     console.log('        "data": {');
-    Object.keys(e.properties).forEach(p => {
-      e.properties[p].forEach(val => {
+    Object.entries(e.properties).forEach(([p,vals]) => {
+      vals.forEach(val => {
         console.log(`          "${p}": "${val}",`);
       });
+    });
+    e.labels.forEach(lab => {
+      console.log(`          "label": "${lab}",`);
     });
     console.log(`          "source": "${e.from}",`);
     console.log(`          "target": "${e.to}",`);

@@ -193,9 +193,6 @@ function outputCyJS(objectTree, outFilePrefix) {
 
   const outFile = outFilePrefix + '.cyjs';
 
-  const nodeProps = Object.keys(objectTree.nodeProperties);
-  const edgeProps = Object.keys(objectTree.edgeProperties);
-
   let counter = 0;
   let nodeCounter = 0;
   let edgeCounter = 0;
@@ -210,17 +207,6 @@ function outputCyJS(objectTree, outFilePrefix) {
   objectTree.nodes.forEach(n => {
     counter++;
     nodeCounter++;
-    // let line = [];
-    // line.push(n.id)
-    // line.push(n.labels)
-    // nodeProps.forEach(p => {
-    //   if (n.properties[p]) {
-    //     line.push(n.properties[p].join(';'));
-    //   } else {
-    //     line.push('');
-    //   }
-    // });
-    // nodeLines.push(line.join('\t'));
     if (nodeCounter > 1) {
       console.log('      ,');
     }
@@ -238,7 +224,6 @@ function outputCyJS(objectTree, outFilePrefix) {
     console.log('      }');
     getNodeID[n.id] = counter;
   });
-
   console.log('    ],');
   console.log('    "edges": [');
 
@@ -247,17 +232,6 @@ function outputCyJS(objectTree, outFilePrefix) {
   objectTree.edges.forEach(e => {
     counter++;
     edgeCounter++;
-    // let line = [];
-    // line.push(e.from, e.to)
-    // line.push(e.labels)
-    // edgeProps.forEach(p => {
-    //   if (e.properties[p]) {
-    //     line.push(e.properties[p].join(';'));
-    //   } else {
-    //     line.push('');
-    //   }
-    // });
-    // edgeLines.push(line.join('\t'));
     const source = getNodeID[e.from];
     const target = getNodeID[e.to];
     if (edgeCounter > 1) {
@@ -279,13 +253,10 @@ function outputCyJS(objectTree, outFilePrefix) {
     console.log('        }');
     console.log('      }');
   });
-
   console.log('    ]');
   console.log('  }');
   console.log('}');
-  
 
-  // console.log(nodeLines.join('\n') + '\n' + edgeLines.join('\n'));
   // fs.writeFile(outFile, nodeLines.join('\n') + '\n' + edgeLines.join('\n') + '\n', (err) => {
   //   if (err) {
   //     console.log(err);

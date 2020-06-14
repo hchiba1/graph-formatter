@@ -226,8 +226,8 @@ function outputCyJS(objectTree, outFilePrefix) {
     }
     console.log('      {');
     console.log('        "data": {');
-    Object.keys(n.properties).forEach(p => {
-      n.properties[p].forEach(val => {
+    Object.entries(n.properties).forEach(([p,vals]) => {
+      vals.forEach(val => {
         console.log(`          "${p}": "${val}",`);
       });
     });

@@ -225,7 +225,7 @@ function outputCyJS(objectTree, outFilePrefix) {
     // console.log(`          "id": "${counter}"`);
     console.log('        }');
     console.log('      }');
-    getNodeID[n.id] = counter;
+    getNodeID[n.id] = nodeCounter;
   });
   console.log('    ],');
   console.log('    "edges": [');
@@ -252,7 +252,11 @@ function outputCyJS(objectTree, outFilePrefix) {
     });
     console.log(`          "source": "${e.from}",`);
     console.log(`          "target": "${e.to}",`);
-    console.log(`          "id": "${edgeCounter}"`);
+    const edgeID = `EdgeID_${edgeCounter}`;
+    if (getNodeID[edgeID]) {
+      console.error(`ERROR: edge ID ${edgeID} already used as a node ID`);
+    }
+    console.log(`          "id": "${edgeID}"`);
     // console.log(`          "source": "${source}",`);
     // console.log(`          "target": "${target}",`);
     // console.log(`          "id": "${counter}"`);

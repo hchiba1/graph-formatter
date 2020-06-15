@@ -42,9 +42,15 @@ Promise.all([
       layout: { name: 'random' }
     });
 
+    cy.nodes().forEach(n => {
+      n.data().score = n.degree();
+    });
+
     var params = {
       name: 'cola',
-      nodeSpacing: 5,
+      // nodeSpacing: 5,
+      nodeSpacing: 100,
+      edgeLength: 1,
       edgeLengthVal: 45,
       animate: true,
       randomize: false,

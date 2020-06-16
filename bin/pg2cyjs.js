@@ -81,7 +81,8 @@ if (commander.check) {
       break;
   }
 } else {
-  outputCyJS(objectTree, outFilePrefix);
+  // same as commander.debug
+  console.log(JSON.stringify(objectTree, null, 2));
 }
 
 // Functions

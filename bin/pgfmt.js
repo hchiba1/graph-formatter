@@ -5,7 +5,7 @@ const path = require('path');
 const parser = require('../lib/pg_parser.js');
 
 const commander = require('commander')
-      .option('-f, --format <FORMAT>', 'json, neo, cyjs')
+      .option('-f, --format <FORMAT>', 'json, neo, cyjs, cyjson')
       .option('--neo', 'same as --format neo')
       .option('-o, --outdir <DIR>', 'output directory', './')
       .option('-c, --check', 'check for missing/orphan nodes')
@@ -72,6 +72,9 @@ if (commander.check) {
       break;
     case 'cyjs':
       outputCyJS(objectTree, outFilePrefix);
+      break;
+    case 'cyjson':
+      outputCyJSON(objectTree, outFilePrefix);
       break;
     case 'pgx':
       outputPGX(objectTree, outFilePrefix);
@@ -275,6 +278,74 @@ function outputCyJS(objectTree, outFilePrefix) {
   //     console.log(`"${outFile}" has been created.`);
   //   }
   // });
+}
+
+function outputCyJSON(objectTree, outFilePrefix) {
+
+  let counter = 0;
+  let nodeCounter = 0;
+  let edgeCounter = 0;
+  let getNodeID = {};
+
+  console.log('  {');
+  console.log('    "nodes": [');
+
+  // Output nodes
+  let nodeLines = [];
+  objectTree.nodes.forEach(n => {
+    counter++;
+    nodeCounter++;
+    if (nodeCounter > 1) {
+      console.log('      ,');
+    }
+    console.log('      {');
+    console.log('        "data": {');
+    Object.entries(n.properties).forEach(([p,vals]) => {
+      vals.forEach(val => {
+        console.log(`          "${p}": "${val}",`);
+      });
+    });
+    n.labels.forEach(lab => {
+      console.log(`          "label": "${lab}",`);
+    });
+    console.log(`          "id": "${n.id}"`);
+    console.log('        }');
+    console.log('      }');
+    getNodeID[n.id] = nodeCounter;
+  });
+  console.log('    ],');
+  console.log('    "edges": [');
+
+  // Output edges
+  let edgeLines = [];
+  objectTree.edges.forEach(e => {
+    counter++;
+    edgeCounter++;
+    if (edgeCounter > 1) {
+      console.log('      ,');
+    }
+    console.log('      {');
+    console.log('        "data": {');
+    Object.entries(e.properties).forEach(([p,vals]) => {
+      vals.forEach(val => {
+        console.log(`          "${p}": "${val}",`);
+      });
+    });
+    e.labels.forEach(lab => {
+      console.log(`          "label": "${lab}",`);
+    });
+    console.log(`          "source": "${e.from}",`);
+    console.log(`          "target": "${e.to}",`);
+    const edgeID = `EdgeID_${edgeCounter}`;
+    if (getNodeID[edgeID]) {
+      console.error(`ERROR: edge ID ${edgeID} already used as a node ID`);
+    }
+    console.log(`          "id": "${edgeID}"`);
+    console.log('        }');
+    console.log('      }');
+  });
+  console.log('    ]');
+  console.log('  }');
 }
 
 function checkGraph(objectTree) {

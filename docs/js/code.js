@@ -69,19 +69,19 @@ Promise.all([
     $config.appendChild( $btnParam );
 
     var sliders = [
-      {
-        label: 'Edge length',
-        param: 'edgeLengthVal',
-        min: 1,
-        max: 200
-      },
+      // {
+      //   label: 'Edge length',
+      //   param: 'edgeLengthVal',
+      //   min: 1,
+      //   max: 200
+      // },
 
-      {
-        label: 'Node spacing',
-        param: 'nodeSpacing',
-        min: 1,
-        max: 50
-      }
+      // {
+      //   label: 'Node spacing',
+      //   param: 'nodeSpacing',
+      //   min: 1,
+      //   max: 50
+      // }
     ];
 
     var buttons = [

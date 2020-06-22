@@ -1,0 +1,8 @@
+{ "type": "node", "id": 1, "labels": [ "Organisation" ], "properties": { "name": [ "Tesla, Inc." ], "creation": [ "2003-07-01" ] } }
+{ "type": "node", "id": 12, "labels": [ "Person" ], "properties": { "birthName": [ "Elon Musk" ], "age": [ "46" ] } }
+{ "type": "node", "id": 15, "labels": [ "City" ], "properties": { "name": [ "Palo Alto" ] } }
+{ "type": "node", "id": 33, "labels": [ "Country" ], "properties": { "name": [ "US" ] } }
+{ "type": "edge", "from": 1, "to": 12, "labels": [ "ceo" ], "properties": {} }
+{ "type": "edge", "from": 1, "to": 15, "labels": [ "location" ], "properties": {} }
+{ "type": "edge", "from": 15, "to": 33, "labels": [ "country" ], "properties": {} }
+{ "type": "edge", "from": 33, "to": 1, "labels": [ "is_location_of" ], "properties": {} }

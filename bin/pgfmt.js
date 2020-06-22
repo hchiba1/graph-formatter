@@ -2,10 +2,12 @@
 
 const fs = require('fs');
 const path = require('path');
-const parser = require('../lib/pg_parser.js');
+// const parser = require('../lib/pg_parser.js');
+const parser = require('../lib/pg2jsonl_parser.js');
+// const parser = require('../lib/ypg_parser.js');
 
 const commander = require('commander')
-      .option('-f, --format <FORMAT>', 'json, neo, cyjs, cyjson')
+      .option('-f, --format <FORMAT>', 'json, jsonl, neo, cyjs, cyjson')
       .option('--neo', 'same as --format neo')
       .option('-o, --outdir <DIR>', 'output directory', './')
       .option('-c, --check', 'check for missing/orphan nodes')
@@ -66,6 +68,9 @@ if (commander.check) {
   switch (commander.format) {
     case 'json':
       outputJSON(objectTree);
+      break;
+    case 'jsonl':
+      outputJsonLines(objectTree, outFilePrefix);
       break;
     case 'neo':
       outputNeo(objectTree, outFilePrefix);
@@ -190,6 +195,48 @@ function outputNeo(objectTree, outFilePrefix) {
     } else {
       console.log(`"${edgeFile}" has been created.`);
     }
+  });
+}
+
+function outputJsonLines(objectTree, outFilePrefix) {
+
+  const outFile = outFilePrefix + '.cyjs';
+
+  const nodeProps = Object.keys(objectTree.nodeProperties);
+  const edgeProps = Object.keys(objectTree.edgeProperties);
+  objectTree.nodes.forEach(n => {
+    let line = [];
+    line.push(`"id": ${n.id},`);
+    line.push('"labels": [ '+n.labels.join(',')+' ],');
+    let props = [];
+    nodeProps.forEach(p => {
+      vals = n.properties[p];
+      props.push(`${p}: [ ` + vals.join(', ') + ' ]');
+    });
+    line.push('"properties": { ' + props.join(', ') + ' }');
+    console.log('{ "type": "node",', line.join(' '), '}');
+  });
+  objectTree.edges.forEach(e => {
+    let line = [];
+    line.push(`"from": ${e.from},`);
+    line.push(`"to": ${e.to},`);
+    if (e.direction === '->') {
+      // line.push(`"direction": "${e.direction}",`)
+    } else {
+      line.push(`"undirected": true,`)
+    }
+    line.push('"labels": [ ' + e.labels.join(', ') + ' ],')
+    let props = [];
+    edgeProps.forEach(p => {
+      vals = e.properties[p];
+      props.push(`${p}: [ ` + vals.join(', ') + ' ]');
+    });
+    if (props.length) {
+      line.push('"properties": { ' + props.join(', ') + ' }');
+    } else {
+      line.push('"properties": {}');
+    }
+    console.log('{ "type": "edge",', line.join(' '), '}');
   });
 }
 

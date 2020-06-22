@@ -23,7 +23,13 @@ if(commander.args[0]) {
 // Functions
 function outputJsonLines(line) {
   if (line.charAt(0) != '#' && line != '') {
-    const objectTree = parser.parse(line);
+    let objectTree;
+    try {
+      objectTree = parser.parse(line);
+    } catch (err) {
+      printError(line, err);
+      process.exit(1);
+    }
     const nodeProps = Object.keys(objectTree.nodeProperties);
     const edgeProps = Object.keys(objectTree.edgeProperties);
     objectTree.nodes.forEach(n => {
@@ -32,9 +38,8 @@ function outputJsonLines(line) {
       line.push('"labels": [ '+n.labels.join(',')+' ],');
       let props = [];
       nodeProps.forEach(p => {
-        n.properties[p].forEach(val => {
-          props.push(`${p}: ${val}`);
-        });
+        vals = n.properties[p];
+        props.push(`${p}: [ ` + vals.join(', ') + ' ]');
       });
       line.push('"properties": { ' + props.join(', ') + ' }');
       console.log('{ "type": "node",', line.join(' '), '}');
@@ -43,13 +48,16 @@ function outputJsonLines(line) {
       let line = [];
       line.push(`"from": ${e.from},`);
       line.push(`"to": ${e.to},`);
-      line.push(`"direction": "${e.direction}",`)
-      line.push('"labels": [ ' + e.labels.join(', ') + ' ]')
+      if (e.direction === '->') {
+        // line.push(`"direction": "${e.direction}",`)
+      } else {
+        line.push(`"undirected": true,`)
+      }
+      line.push('"labels": [ ' + e.labels.join(', ') + ' ],')
       let props = [];
       edgeProps.forEach(p => {
-        e.properties[p].forEach(val => {
-          props.push(`${p}: ${val}`);
-        });
+        vals = e.properties[p];
+        props.push(`${p}: [ ` + vals.join(', ') + ' ]');
       });
       if (props.length) {
         line.push('"properties": { ' + props.join(', ') + ' }');
@@ -59,4 +67,20 @@ function outputJsonLines(line) {
       console.log('{ "type": "edge",', line.join(' '), '}');
     });
   }
+}
+
+function printError(line, err) {
+  const startCol = err.location.start.column;
+  const endCol = err.location.end.column;
+  console.error(`ERROR col:${startCol}-${endCol}`);
+  console.error(err.message);
+  console.error('--');
+  console.error(makeRed(line.substring(0, startCol - 1)) + line.substring(startCol - 1));
+}
+
+function makeRed(text) {
+  // const red = '\u001b[31m'; // foreground
+  const red = '\u001b[41m'; // backgrond
+  const reset = '\u001b[0m';
+  return red + text + reset;
 }

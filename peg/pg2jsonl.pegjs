@@ -173,7 +173,7 @@ SingleQuotedChar = !("'" / "\\") char:.
   return esc;
 }
 
-Value = Number & SPECIAL_CHAR
+Value = Number & (SPECIAL_CHAR / EndOfLine)
 {
   return text();
 }

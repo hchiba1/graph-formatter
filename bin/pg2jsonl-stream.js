@@ -8,7 +8,6 @@ const commander = require('commander')
       .parse(process.argv);
 
 // Get input and output file names
-const sep = '\t';
 if(commander.args[0]) {
 } else if (process.stdin.isTTY) {
   commander.help();
@@ -52,7 +51,11 @@ function outputJsonLines(line) {
           props.push(`${p}: ${val}`);
         });
       });
-      line.push('"properties": { ' + props.join(', ') + ' }');
+      if (props.length) {
+        line.push('"properties": { ' + props.join(', ') + ' }');
+      } else {
+        line.push('"properties": {}');
+      }
       console.log('{ "type": "edge",', line.join(' '), '}');
     });
   }

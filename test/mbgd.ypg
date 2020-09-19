@@ -1,0 +1,359 @@
+1[Resource]:{iri:"http://purl.jp/bio/11/mbgd"}
+2[Resource]:{iri:"http://www.w3.org/2002/07/owl#Ontology"}
+(1)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(2)
+4[Literal]:{value:"An ontology for MBGD",type:"http://www.w3.org/2001/XMLSchema#string"}
+(1)-[DatatypeProperty {type:"http://purl.org/dc/terms/title"}]->(4)
+6[Literal]:{value:"An ontology for describing MBGD data.",type:"http://www.w3.org/2001/XMLSchema#string"}
+(1)-[DatatypeProperty {type:"http://purl.org/dc/terms/description"}]->(6)
+8[Literal]:{value:"2014-10-16",type:"http://www.w3.org/2001/XMLSchema#string"}
+(1)-[DatatypeProperty {type:"http://www.w3.org/2002/07/owl#versionInfo"}]->(8)
+10[Resource]:{iri:"http://mbgd.genome.ad.jp/ontology/mbgd.2014-10-16.ttl"}
+(1)-[ObjectProperty {type:"http://www.w3.org/2002/07/owl#versionIRI"}]->(10)
+12[Resource]:{iri:"http://mbgd.genome.ad.jp/ontology/mbgd.20130812.owl"}
+(1)-[ObjectProperty {type:"http://www.w3.org/2002/07/owl#priorVersion"}]->(12)
+14[Resource]:{iri:"http://mbgd.genome.ad.jp/ontology/"}
+(1)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#seeAlso"}]->(14)
+16[Resource]:{iri:"http://purl.jp/bio/11/orth"}
+(1)-[ObjectProperty {type:"http://www.w3.org/2002/07/owl#imports"}]->(16)
+18[Resource]:{iri:"http://purl.uniprot.org/core/"}
+(1)-[ObjectProperty {type:"http://www.w3.org/2002/07/owl#imports"}]->(18)
+20[Resource]:{iri:"http://purl.jp/bio/11/mbgd#CDS"}
+21[Resource]:{iri:"http://www.w3.org/2002/07/owl#Class"}
+(20)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+23[Literal]:{value:"CDS",type:"http://www.w3.org/2001/XMLSchema#string"}
+(20)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(23)
+25[Resource]:{iri:"http://purl.jp/bio/11/orth#Gene"}
+(20)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(25)
+(20)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+28[Resource]:{iri:"http://purl.jp/bio/11/mbgd#tRNA"}
+(28)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+30[Literal]:{value:"tRNA",type:"http://www.w3.org/2001/XMLSchema#string"}
+(28)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(30)
+(28)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(25)
+(28)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+34[Resource]:{iri:"http://purl.jp/bio/11/mbgd#rRNA"}
+(34)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+36[Literal]:{value:"rRNA",type:"http://www.w3.org/2001/XMLSchema#string"}
+(34)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(36)
+(34)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(25)
+(34)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+40[Resource]:{iri:"http://purl.jp/bio/11/mbgd#ncRNA"}
+(40)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+42[Literal]:{value:"ncRNA",type:"http://www.w3.org/2001/XMLSchema#string"}
+(40)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(42)
+(40)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(25)
+(40)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+46[Resource]:{iri:"http://purl.jp/bio/11/mbgd#tmRNA"}
+(46)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+48[Literal]:{value:"tmRNA",type:"http://www.w3.org/2001/XMLSchema#string"}
+(46)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(48)
+(46)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(25)
+(46)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+52[Resource]:{iri:"http://purl.jp/bio/11/mbgd#snoRNA"}
+(52)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+54[Literal]:{value:"snoRNA",type:"http://www.w3.org/2001/XMLSchema#string"}
+(52)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(54)
+(52)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(25)
+(52)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+58[Resource]:{iri:"http://purl.jp/bio/11/mbgd#misc_RNA"}
+(58)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+60[Literal]:{value:"misc_RNA",type:"http://www.w3.org/2001/XMLSchema#string"}
+(58)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(60)
+(58)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(25)
+(58)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+64[Resource]:{iri:"http://purl.jp/bio/11/mbgd#Domain"}
+(64)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+66[Literal]:{value:"Domain",type:"http://www.w3.org/2001/XMLSchema#string"}
+(64)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(66)
+68[Resource]:{iri:"http://purl.jp/bio/11/orth#SequenceUnit"}
+(64)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(68)
+(64)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+71[Resource]:{iri:"http://purl.jp/bio/11/mbgd#NucSeq"}
+(71)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+73[Literal]:{value:"NucSeq",type:"http://www.w3.org/2001/XMLSchema#string"}
+(71)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(73)
+75[Resource]:{iri:"http://purl.jp/bio/11/orth#Resource"}
+(71)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(75)
+(71)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+78[Resource]:{iri:"http://purl.jp/bio/11/mbgd#Chromosome"}
+(78)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+80[Literal]:{value:"Chromosome",type:"http://www.w3.org/2001/XMLSchema#string"}
+(78)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(80)
+(78)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(71)
+83[Resource]:{iri:"http://purl.obolibrary.org/obo/SO_0000340"}
+(78)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(83)
+(78)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+86[Resource]:{iri:"http://purl.jp/bio/11/mbgd#Contig"}
+(86)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+88[Literal]:{value:"Contig",type:"http://www.w3.org/2001/XMLSchema#string"}
+(86)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(88)
+(86)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(71)
+(86)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+92[Resource]:{iri:"http://purl.jp/bio/11/mbgd#Plasmid"}
+(92)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+94[Literal]:{value:"Plasmid",type:"http://www.w3.org/2001/XMLSchema#string"}
+(92)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(94)
+(92)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(71)
+97[Resource]:{iri:"http://purl.obolibrary.org/obo/SO_0000155"}
+(92)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(97)
+(92)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+100[Resource]:{iri:"http://purl.jp/bio/11/mbgd#Mitochondrion"}
+(100)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+102[Literal]:{value:"Mitochondrion",type:"http://www.w3.org/2001/XMLSchema#string"}
+(100)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(102)
+(100)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(71)
+105[Resource]:{iri:"http://purl.obolibrary.org/obo/SO_0001032"}
+(100)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(105)
+(100)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+108[Resource]:{iri:"http://purl.jp/bio/11/mbgd#NucShape"}
+(108)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+110[Literal]:{value:"NucShape",type:"http://www.w3.org/2001/XMLSchema#string"}
+(108)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(110)
+(108)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(75)
+113[Resource]:{iri:"http://purl.obolibrary.org/obo/SO_0000443"}
+(108)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(113)
+(108)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+116[Resource]:{iri:"http://purl.jp/bio/11/mbgd#Linear"}
+(116)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+118[Literal]:{value:"Linear",type:"http://www.w3.org/2001/XMLSchema#string"}
+(116)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(118)
+120[Resource]:{iri:"http://purl.jp/bio/11/mbgd#Shape"}
+(116)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(120)
+122[Resource]:{iri:"http://purl.obolibrary.org/obo/SO_0000987"}
+(116)-[ObjectProperty {type:"http://www.w3.org/2002/07/owl#equivalentClass"}]->(122)
+(116)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+125[Resource]:{iri:"http://purl.jp/bio/11/mbgd#Circular"}
+(125)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(21)
+127[Literal]:{value:"Circular",type:"http://www.w3.org/2001/XMLSchema#string"}
+(125)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(127)
+(125)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subClassOf"}]->(120)
+130[Resource]:{iri:"http://purl.obolibrary.org/obo/SO_0000988"}
+(125)-[ObjectProperty {type:"http://www.w3.org/2002/07/owl#equivalentClass"}]->(130)
+(125)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+133[Resource]:{iri:"http://purl.jp/bio/11/mbgd#gtps"}
+134[Resource]:{iri:"http://www.w3.org/2002/07/owl#ObjectProperty"}
+(133)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(134)
+136[Literal]:{value:"gtps",type:"http://www.w3.org/2001/XMLSchema#string"}
+(133)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(136)
+138[Resource]:{iri:"http://purl.jp/bio/11/orth#gene"}
+(133)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(138)
+(133)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+141[Resource]:{iri:"http://purl.jp/bio/11/mbgd#uniprot"}
+(141)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(134)
+143[Literal]:{value:"uniprot",type:"http://www.w3.org/2001/XMLSchema#string"}
+(141)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(143)
+145[Resource]:{iri:"http://purl.jp/bio/11/orth#protein"}
+(141)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(145)
+147[Resource]:{iri:"http://purl.uniprot.org/core/Protein"}
+(141)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(147)
+(141)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+150[Resource]:{iri:"http://purl.jp/bio/11/mbgd#domain"}
+(150)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(134)
+152[Literal]:{value:"domain",type:"http://www.w3.org/2001/XMLSchema#string"}
+(150)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(152)
+(150)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(25)
+(150)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(64)
+156[Resource]:{iri:"http://purl.jp/bio/11/orth#crossReference"}
+(150)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(156)
+158[Resource]:{iri:"http://purl.org/dc/terms/hasPart"}
+(150)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(158)
+160[Resource]:{iri:"http://purl.obolibrary.org/obo/so_has_part"}
+(150)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(160)
+162[Resource]:{iri:"http://semanticscience.org/resource/SIO_000974"}
+(150)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(162)
+(150)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+165[Resource]:{iri:"http://purl.jp/bio/11/mbgd#nucSeq"}
+(165)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(134)
+167[Literal]:{value:"genome",type:"http://www.w3.org/2001/XMLSchema#string"}
+(165)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(167)
+(165)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(75)
+(165)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(71)
+171[Resource]:{iri:"http://purl.jp/bio/11/orth#reference"}
+(165)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(171)
+(165)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+174[Resource]:{iri:"http://purl.jp/bio/11/mbgd#score"}
+175[Resource]:{iri:"http://www.w3.org/2002/07/owl#DatatypeProperty"}
+(174)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+177[Literal]:{value:"score",type:"http://www.w3.org/2001/XMLSchema#string"}
+(174)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(177)
+179[Resource]:{iri:"http://purl.jp/bio/11/orth#OrthologGroup"}
+(174)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(179)
+181[Resource]:{iri:"http://www.w3.org/2001/XMLSchema#decimal"}
+(174)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(181)
+183[Resource]:{iri:"http://purl.jp/bio/11/orth#groupScore"}
+(174)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(183)
+(174)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+186[Resource]:{iri:"http://purl.jp/bio/11/mbgd#dist"}
+(186)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+188[Literal]:{value:"dist",type:"http://www.w3.org/2001/XMLSchema#string"}
+(186)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(188)
+(186)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(179)
+(186)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(181)
+(186)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(183)
+(186)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+194[Resource]:{iri:"http://purl.jp/bio/11/mbgd#funcCategory"}
+(194)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+196[Literal]:{value:"funcCategory",type:"http://www.w3.org/2001/XMLSchema#string"}
+(194)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(196)
+(194)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(179)
+199[Resource]:{iri:"http://www.w3.org/2001/XMLSchema#string"}
+(194)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(199)
+201[Resource]:{iri:"http://purl.jp/bio/11/orth#groupValue"}
+(194)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(201)
+(194)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+204[Resource]:{iri:"http://purl.jp/bio/11/mbgd#funcMbgd"}
+(204)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+206[Literal]:{value:"funcMbgd",type:"http://www.w3.org/2001/XMLSchema#string"}
+(204)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(206)
+(204)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(179)
+(204)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(199)
+(204)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(194)
+(204)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+212[Resource]:{iri:"http://purl.jp/bio/11/mbgd#funcCog"}
+(212)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+214[Literal]:{value:"funcCog",type:"http://www.w3.org/2001/XMLSchema#string"}
+(212)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(214)
+(212)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(179)
+(212)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(199)
+(212)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(194)
+(212)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+220[Resource]:{iri:"http://purl.jp/bio/11/mbgd#funcKegg"}
+(220)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+222[Literal]:{value:"funcKegg",type:"http://www.w3.org/2001/XMLSchema#string"}
+(220)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(222)
+(220)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(179)
+(220)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(199)
+(220)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(194)
+(220)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+228[Resource]:{iri:"http://purl.jp/bio/11/mbgd#funcTigr"}
+(228)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+230[Literal]:{value:"funcTigr",type:"http://www.w3.org/2001/XMLSchema#string"}
+(228)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(230)
+(228)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(179)
+(228)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(199)
+(228)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(194)
+(228)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+236[Resource]:{iri:"http://purl.jp/bio/11/mbgd#geneValue"}
+(236)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+238[Literal]:{value:"geneValue",type:"http://www.w3.org/2001/XMLSchema#string"}
+(236)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(238)
+(236)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(25)
+241[Resource]:{iri:"http://www.w3.org/2000/01/rdf-schema#Literal"}
+(236)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(241)
+243[Resource]:{iri:"http://purl.jp/bio/11/orth#value"}
+(236)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(243)
+(236)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+246[Resource]:{iri:"http://purl.jp/bio/11/mbgd#aaLength"}
+(246)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+248[Literal]:{value:"aaLength",type:"http://www.w3.org/2001/XMLSchema#string"}
+(246)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(248)
+(246)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(25)
+251[Resource]:{iri:"http://www.w3.org/2001/XMLSchema#integer"}
+(246)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(251)
+(246)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(236)
+254[Resource]:{iri:"http://semanticscience.org/resource/SIO_000041"}
+(246)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(254)
+(246)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+257[Resource]:{iri:"http://purl.jp/bio/11/mbgd#domainValue"}
+(257)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+259[Literal]:{value:"domainValue",type:"http://www.w3.org/2001/XMLSchema#string"}
+(257)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(259)
+(257)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(64)
+(257)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(241)
+(257)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(243)
+(257)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+265[Resource]:{iri:"http://purl.jp/bio/11/mbgd#domainPosition"}
+(265)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+267[Literal]:{value:"domainPosition",type:"http://www.w3.org/2001/XMLSchema#string"}
+(265)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(267)
+(265)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(64)
+(265)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(251)
+(265)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(257)
+272[Resource]:{iri:"http://semanticscience.org/resource/SIO_000789"}
+(265)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(272)
+(265)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+275[Resource]:{iri:"http://purl.jp/bio/11/mbgd#domainBegin"}
+(275)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+277[Literal]:{value:"domainBegin",type:"http://www.w3.org/2001/XMLSchema#string"}
+(275)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(277)
+(275)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(64)
+(275)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(251)
+(275)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(265)
+282[Resource]:{iri:"http://semanticscience.org/resource/SIO_000791"}
+(275)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(282)
+(275)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+285[Resource]:{iri:"http://purl.jp/bio/11/mbgd#domainEnd"}
+(285)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+287[Literal]:{value:"domainEnd",type:"http://www.w3.org/2001/XMLSchema#string"}
+(285)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(287)
+(285)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(64)
+(285)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(251)
+(285)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(265)
+292[Resource]:{iri:"http://semanticscience.org/resource/SIO_000792"}
+(285)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(292)
+(285)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+295[Resource]:{iri:"http://purl.jp/bio/11/mbgd#organismValue"}
+(295)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+297[Literal]:{value:"organismValue",type:"http://www.w3.org/2001/XMLSchema#string"}
+(295)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(297)
+299[Resource]:{iri:"http://purl.jp/bio/11/orth#Organism"}
+(295)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(299)
+(295)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(243)
+(295)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+303[Resource]:{iri:"http://purl.jp/bio/11/mbgd#family"}
+(303)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+305[Literal]:{value:"family",type:"http://www.w3.org/2001/XMLSchema#string"}
+(303)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(305)
+(303)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(299)
+(303)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(199)
+(303)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(295)
+(303)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+311[Resource]:{iri:"http://purl.jp/bio/11/mbgd#genus"}
+(311)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+313[Literal]:{value:"genus",type:"http://www.w3.org/2001/XMLSchema#string"}
+(311)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(313)
+(311)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(299)
+(311)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(199)
+(311)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(295)
+(311)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+319[Resource]:{iri:"http://purl.jp/bio/11/mbgd#species"}
+(319)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+321[Literal]:{value:"species",type:"http://www.w3.org/2001/XMLSchema#string"}
+(319)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(321)
+(319)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(299)
+(319)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(199)
+(319)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(295)
+(319)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+327[Resource]:{iri:"http://purl.jp/bio/11/mbgd#strain"}
+(327)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+329[Literal]:{value:"strain",type:"http://www.w3.org/2001/XMLSchema#string"}
+(327)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(329)
+(327)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(299)
+(327)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(199)
+(327)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(295)
+(327)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+335[Resource]:{iri:"http://purl.jp/bio/11/mbgd#nucSeqValue"}
+(335)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+337[Literal]:{value:"nucSeqValue",type:"http://www.w3.org/2001/XMLSchema#string"}
+(335)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(337)
+(335)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(71)
+(335)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(241)
+(335)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(243)
+(335)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+343[Resource]:{iri:"http://purl.jp/bio/11/mbgd#nucLength"}
+(343)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+345[Literal]:{value:"nucLength",type:"http://www.w3.org/2001/XMLSchema#string"}
+(343)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(345)
+(343)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(71)
+(343)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(251)
+(343)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(335)
+(343)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(254)
+(343)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)
+352[Resource]:{iri:"http://purl.jp/bio/11/mbgd#geneCount"}
+(352)-[ObjectProperty {type:"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}]->(175)
+354[Literal]:{value:"geneCount",type:"http://www.w3.org/2001/XMLSchema#string"}
+(352)-[DatatypeProperty {type:"http://www.w3.org/2000/01/rdf-schema#label"}]->(354)
+(352)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#domain"}]->(71)
+(352)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#range"}]->(251)
+(352)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"}]->(335)
+(352)-[ObjectProperty {type:"http://www.w3.org/2000/01/rdf-schema#isDefinedBy"}]->(1)

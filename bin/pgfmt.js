@@ -3,7 +3,8 @@
 const fs = require('fs');
 const path = require('path');
 // const parser = require('../lib/pg_parser.js');
-const parser = require('../lib/pg2jsonl_parser.js');
+const parser = require('../lib/pg_new_parser.js');
+// const parser = require('../lib/pg2jsonl_parser.js');
 // const parser = require('../lib/ypg_parser.js');
 
 const commander = require('commander')

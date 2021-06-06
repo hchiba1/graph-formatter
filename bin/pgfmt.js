@@ -2,8 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-// const parser = require('../lib/pg_parser.js');
-const parser = require('../lib/pg_new_parser.js');
+const parser = require('../lib/pg_parser.js');
 // const parser = require('../lib/pg2jsonl_parser.js');
 // const parser = require('../lib/ypg_parser.js');
 
@@ -90,11 +89,61 @@ if (commander.check) {
       break;
   }
 } else {
-  // same as commander.debug
-  console.log(JSON.stringify(objectTree, null, 2));
+  formatter(objectTree, '\n  ');
 }
 
 // Functions
+function formatter(objectTree, sep) {
+  objectTree.nodes.forEach((node) => {
+    printNode(node, sep);
+  });
+  objectTree.edges.forEach((edge) => {
+    printEdge(edge, sep);
+  });
+}
+
+function printNode(node, sep) {
+  let out = node.id;
+  const labels = getLabels(node.labels, sep);
+  props = getProps(node.properties, sep);
+  if (labels) {
+    out += `${sep}${labels}`;
+  }
+  if (props) {
+    out += `${sep}${props}`;
+  }
+  console.log(out);
+  console.log();
+}
+
+function printEdge(edge, sep) {
+  let out = `${edge.from} ${edge.direction} ${edge.to}`;
+  let labels = getLabels(edge.labels, sep);
+  props = getProps(edge.properties, sep);
+  if (labels) {
+    out += `${sep}${labels}`;
+  }
+  if (props) {
+    out += `${sep}${props}`;
+  }
+  console.log(out);
+  console.log();
+}
+
+function getLabels(labels, sep) {
+  return labels.map(x => `:${x}`).join(sep);
+}
+
+function getProps(props, sep) {
+  let ret = [];
+  Object.entries(props).forEach(([key, vals]) => {
+    vals.forEach((val) => {
+      ret.push(`${key}: ${val}`);
+    });
+  });
+  return ret.join(sep);
+}
+
 function outputJSON(objectTree) {
   // print selected properties for JSON-PG
   const basicProps = ['nodes', 'edges', 'id', 'from', 'to', 'direction', 'labels', 'properties'];

@@ -36,7 +36,7 @@ NodeOrEdge = n:Node
   }
 }
 
-Node = CommentLine* WS* id:Value l:Label* p:Property* TrailingChars EndOfLine
+Node = CommentLine* WS* id:Value l:Label* p:Property* InlineComment EndOfLine
 {
   let propObj = {};
   p.forEach(prop => {
@@ -70,7 +70,7 @@ Node = CommentLine* WS* id:Value l:Label* p:Property* TrailingChars EndOfLine
   }
 }
 
-Edge = CommentLine* WS* f:Value WS+ d:Direction WS+ t:Value l:Label* p:Property* TrailingChars EndOfLine
+Edge = CommentLine* WS* f:Value WS+ d:Direction WS+ t:Value l:Label* p:Property* InlineComment EndOfLine
 {
   let propObj = {};
   p.forEach(prop => {
@@ -208,6 +208,6 @@ EndOfLine = EOF / NEWLINE
 
 CommentLine = WS* (('#' NON_NEWLINE* EndOfLine) / NEWLINE)
 
-TrailingChars = (WS+ '#' WS+ NON_NEWLINE*) / WS*
+InlineComment = (WS+ '#' WS+ NON_NEWLINE*) / WS*
 
-Delimiter = (TrailingChars NEWLINE WS+) / WS+
+Delimiter = (InlineComment NEWLINE WS+) / WS+

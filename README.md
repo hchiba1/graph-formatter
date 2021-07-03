@@ -1,4 +1,4 @@
-# graph formatter
+# Graph formatter
 
 ## pg-fmt
-PG (property graph) formatter
+A formatter for the PG (property graph) format

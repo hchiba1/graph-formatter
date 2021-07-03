@@ -14,7 +14,7 @@
     "pegjs": "^0.10.0"
   },
   "bin": {
-    "pg-fmt": "./bin/pg-fmt.js",
+    "pg-fmt": "./bin/pg-fmt.js"
   },
   "mocha": {
     "timeout": 15000,

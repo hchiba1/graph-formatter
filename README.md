@@ -1,1 +1,1 @@
-# pgfmt
+# graph formatter

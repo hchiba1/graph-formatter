@@ -23,7 +23,6 @@
   "scripts": {
     "test": "mocha",
     "test-pattern": "mocha -g",
-    "pg": "./node_modules/pegjs/bin/pegjs -o lib/pg_parser.js peg/pg.pegjs",
-    "ttl": "./node_modules/pegjs/bin/pegjs -o lib/ttl_parser.js peg/ttl.pegjs"
+    "pg": "./node_modules/pegjs/bin/pegjs -o lib/pg_parser.js peg/pg.pegjs"
   }
 }
